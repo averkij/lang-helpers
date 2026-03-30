@@ -1,0 +1,1173 @@
+{
+  "sentences": [
+    {
+      "id": "1",
+      "text": "чʼо ытик нивғ-ғун тʼатл ӈа-й-ра",
+      "translation": "У одного человека был рассказ",
+      "tokens": [
+        {
+          "itoken": "1",
+          "token": "чʼо",
+          "lemma": "чʼо",
+          "pos": "NUM",
+          "tagsets": [],
+          "glosses": "_"
+        },
+        {
+          "itoken": "2",
+          "token": "ытик",
+          "lemma": "ытик",
+          "pos": "NUM",
+          "tagsets": [],
+          "glosses": "_"
+        },
+        {
+          "itoken": "3",
+          "token": "нивғ-ғун",
+          "lemma": "нивғ",
+          "pos": "NOUN",
+          "tagsets": [
+            [
+              "Case=Abl",
+              "Number=Sing"
+            ]
+          ],
+          "glosses": "ABL"
+        },
+        {
+          "itoken": "4",
+          "token": "тʼатл",
+          "lemma": "тʼатл",
+          "pos": "NOUN",
+          "tagsets": [
+            [
+              "Case=Abs",
+              "Number=Sing"
+            ]
+          ],
+          "glosses": "_"
+        },
+        {
+          "itoken": "5",
+          "token": "ӈа-й-ра",
+          "lemma": "ӈа",
+          "pos": "VERB",
+          "tagsets": [
+            [
+              "Emphatic=Yes",
+              "Mood=Ind",
+              "Tense=Pres_Aor"
+            ]
+          ],
+          "glosses": "IND.EMPH"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "text": "тыф ирг-ахт кеӈ-гу-д",
+      "translation": "Он был хорошим охотником на медведей",
+      "tokens": [
+        {
+          "itoken": "1",
+          "token": "тыф",
+          "lemma": "тыф",
+          "pos": "NOUN",
+          "tagsets": [
+            [
+              "Case=Abs",
+              "Number=Sing"
+            ]
+          ],
+          "glosses": "_"
+        },
+        {
+          "itoken": "2",
+          "token": "ирг-ахт",
+          "lemma": "ирг",
+          "pos": "NOUN",
+          "tagsets": [
+            [
+              "Case=Abs",
+              "Number=Sing"
+            ]
+          ],
+          "glosses": "_"
+        },
+        {
+          "itoken": "3",
+          "token": "кеӈ-гу-д",
+          "lemma": "кеӈ",
+          "pos": "VERB",
+          "tagsets": [
+            [
+              "Mood=Ind",
+              "Tense=Pres_Aor",
+              "Voice=Caus"
+            ]
+          ],
+          "glosses": "CAUS.IND"
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "text": "тыф пʼ-рыӈ-ин тыф-тоз имги ны-лаӄр-д",
+      "translation": "Со своим ребёнком он вместе ходил",
+      "tokens": [
+        {
+          "itoken": "1",
+          "token": "тыф",
+          "lemma": "тыф",
+          "pos": "NOUN",
+          "tagsets": [
+            [
+              "Case=Abs",
+              "Number=Sing"
+            ]
+          ],
+          "glosses": "_"
+        },
+        {
+          "itoken": "2",
+          "token": "пʼ-рыӈ-ин",
+          "lemma": "пʼ",
+          "pos": "NOUN",
+          "tagsets": [
+            [
+              "Case=Dat",
+              "Number=Sing",
+              "Poss=Yes"
+            ]
+          ],
+          "glosses": "POSS.DAT"
+        },
+        {
+          "itoken": "3",
+          "token": "тыф-тоз",
+          "lemma": "тыф",
+          "pos": "NOUN",
+          "tagsets": [
+            [
+              "Case=Ins",
+              "Number=Sing"
+            ]
+          ],
+          "glosses": "INST"
+        },
+        {
+          "itoken": "4",
+          "token": "имги",
+          "lemma": "имги",
+          "pos": "NOUN",
+          "tagsets": [
+            [
+              "Case=Abs",
+              "Number=Sing"
+            ]
+          ],
+          "glosses": "_"
+        },
+        {
+          "itoken": "5",
+          "token": "ны-лаӄр-д",
+          "lemma": "ны",
+          "pos": "VERB",
+          "tagsets": [
+            [
+              "Mood=Ind",
+              "Number=Sing",
+              "Person=3",
+              "Tense=Pres_Aor"
+            ]
+          ],
+          "glosses": "3SG.IND"
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "text": "пʼ-рыӈ ма-ғун ирг-ла пʼа-й-д",
+      "translation": "Ребёнок от отца знал, как убивать медведя",
+      "tokens": [
+        {
+          "itoken": "1",
+          "token": "пʼ-рыӈ",
+          "lemma": "пʼ-рыӈ",
+          "pos": "NOUN",
+          "tagsets": [
+            [
+              "Case=Abs",
+              "Number=Sing"
+            ]
+          ],
+          "glosses": "_"
+        },
+        {
+          "itoken": "2",
+          "token": "ма-ғун",
+          "lemma": "ма",
+          "pos": "NOUN",
+          "tagsets": [
+            [
+              "Case=Abl",
+              "Number=Sing"
+            ]
+          ],
+          "glosses": "ABL"
+        },
+        {
+          "itoken": "3",
+          "token": "ирг-ла",
+          "lemma": "ирг",
+          "pos": "NOUN",
+          "tagsets": [
+            [
+              "Case=Abs",
+              "Number=Sing"
+            ]
+          ],
+          "glosses": "_"
+        },
+        {
+          "itoken": "4",
+          "token": "пʼа-й-д",
+          "lemma": "пʼа",
+          "pos": "VERB",
+          "tagsets": [
+            [
+              "Mood=Ind",
+              "Tense=Pres_Aor"
+            ]
+          ],
+          "glosses": "IND.IND"
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "text": "ӈыӈ тыф ирг-ку ны-вила-й-д",
+      "translation": "Мать учила его на медвежьей охоте",
+      "tokens": [
+        {
+          "itoken": "1",
+          "token": "ӈыӈ",
+          "lemma": "ӈыӈ",
+          "pos": "NOUN",
+          "tagsets": [
+            [
+              "Case=Abs",
+              "Number=Sing"
+            ]
+          ],
+          "glosses": "_"
+        },
+        {
+          "itoken": "2",
+          "token": "тыф",
+          "lemma": "тыф",
+          "pos": "NOUN",
+          "tagsets": [
+            [
+              "Case=Abs",
+              "Number=Sing"
+            ]
+          ],
+          "glosses": "_"
+        },
+        {
+          "itoken": "3",
+          "token": "ирг-ку",
+          "lemma": "ирг",
+          "pos": "NOUN",
+          "tagsets": [
+            [
+              "Case=Loc",
+              "Number=Sing"
+            ]
+          ],
+          "glosses": "LOC"
+        },
+        {
+          "itoken": "4",
+          "token": "ны-вила-й-д",
+          "lemma": "ны",
+          "pos": "VERB",
+          "tagsets": [
+            [
+              "Mood=Ind",
+              "Number=Sing",
+              "Person=3",
+              "Tense=Pres_Aor"
+            ]
+          ],
+          "glosses": "3SG.IND.IND"
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "text": "мыр-ку тулғ ны-раӈ-д",
+      "translation": "В лесу он развёл огонь",
+      "tokens": [
+        {
+          "itoken": "1",
+          "token": "мыр-ку",
+          "lemma": "мыр",
+          "pos": "NOUN",
+          "tagsets": [
+            [
+              "Case=Loc",
+              "Number=Sing"
+            ]
+          ],
+          "glosses": "LOC"
+        },
+        {
+          "itoken": "2",
+          "token": "тулғ",
+          "lemma": "тулғ",
+          "pos": "NOUN",
+          "tagsets": [
+            [
+              "Case=Abs",
+              "Number=Sing"
+            ]
+          ],
+          "glosses": "_"
+        },
+        {
+          "itoken": "3",
+          "token": "ны-раӈ-д",
+          "lemma": "ны",
+          "pos": "VERB",
+          "tagsets": [
+            [
+              "Mood=Ind",
+              "Number=Sing",
+              "Person=3",
+              "Tense=Pres_Aor"
+            ]
+          ],
+          "glosses": "3SG.IND"
+        }
+      ]
+    },
+    {
+      "id": "7",
+      "text": "тыф пилг-и-ны-ра кʼмыт-ку мы-й-д",
+      "translation": "Когда он вырос, он стал заниматься охотой",
+      "tokens": [
+        {
+          "itoken": "1",
+          "token": "тыф",
+          "lemma": "тыф",
+          "pos": "NOUN",
+          "tagsets": [
+            [
+              "Case=Abs",
+              "Number=Sing"
+            ]
+          ],
+          "glosses": "_"
+        },
+        {
+          "itoken": "2",
+          "token": "пилг-и-ны-ра",
+          "lemma": "пилг",
+          "pos": "VERB",
+          "tagsets": [
+            [
+              "Emphatic=Yes",
+              "Tense=Pres_Aor",
+              "VerbForm=Conv"
+            ]
+          ],
+          "glosses": "CONV.EMPH"
+        },
+        {
+          "itoken": "3",
+          "token": "кʼмыт-ку",
+          "lemma": "кʼмыт",
+          "pos": "NOUN",
+          "tagsets": [
+            [
+              "Case=Loc",
+              "Number=Sing"
+            ]
+          ],
+          "glosses": "LOC"
+        },
+        {
+          "itoken": "4",
+          "token": "мы-й-д",
+          "lemma": "мы",
+          "pos": "VERB",
+          "tagsets": [
+            [
+              "Mood=Ind",
+              "Tense=Pres_Aor"
+            ]
+          ],
+          "glosses": "IND.IND"
+        }
+      ]
+    },
+    {
+      "id": "8",
+      "text": "ирг-гу мыр-ку ны-лаӄр-итр-д",
+      "translation": "Медведи в лесу ходили туда-сюда",
+      "tokens": [
+        {
+          "itoken": "1",
+          "token": "ирг-гу",
+          "lemma": "ирг",
+          "pos": "NOUN",
+          "tagsets": [
+            [
+              "Case=Abs",
+              "Number=Plur"
+            ]
+          ],
+          "glosses": "PL"
+        },
+        {
+          "itoken": "2",
+          "token": "мыр-ку",
+          "lemma": "мыр",
+          "pos": "NOUN",
+          "tagsets": [
+            [
+              "Case=Loc",
+              "Number=Sing"
+            ]
+          ],
+          "glosses": "LOC"
+        },
+        {
+          "itoken": "3",
+          "token": "ны-лаӄр-итр-д",
+          "lemma": "ны",
+          "pos": "VERB",
+          "tagsets": [
+            [
+              "Aspect=Iter",
+              "Mood=Ind",
+              "Number=Sing",
+              "Person=3",
+              "Tense=Pres_Aor"
+            ]
+          ],
+          "glosses": "3SG.ITER.IND"
+        }
+      ]
+    },
+    {
+      "id": "9",
+      "text": "ыт чʼо нивғ тыф-тоз ны-тʼу-й-д",
+      "translation": "Ещё один человек пришёл к нему",
+      "tokens": [
+        {
+          "itoken": "1",
+          "token": "ыт",
+          "lemma": "ыт",
+          "pos": "NOUN",
+          "tagsets": [
+            [
+              "Case=Abs",
+              "Number=Sing"
+            ]
+          ],
+          "glosses": "_"
+        },
+        {
+          "itoken": "2",
+          "token": "чʼо",
+          "lemma": "чʼо",
+          "pos": "NUM",
+          "tagsets": [],
+          "glosses": "_"
+        },
+        {
+          "itoken": "3",
+          "token": "нивғ",
+          "lemma": "нивғ",
+          "pos": "NOUN",
+          "tagsets": [
+            [
+              "Case=Abs",
+              "Number=Sing"
+            ]
+          ],
+          "glosses": "_"
+        },
+        {
+          "itoken": "4",
+          "token": "тыф-тоз",
+          "lemma": "тыф",
+          "pos": "NOUN",
+          "tagsets": [
+            [
+              "Case=Ins",
+              "Number=Sing"
+            ]
+          ],
+          "glosses": "INST"
+        },
+        {
+          "itoken": "5",
+          "token": "ны-тʼу-й-д",
+          "lemma": "ны",
+          "pos": "VERB",
+          "tagsets": [
+            [
+              "Mood=Ind",
+              "Number=Sing",
+              "Person=3",
+              "Tense=Pres_Aor"
+            ]
+          ],
+          "glosses": "3SG.IND.IND"
+        }
+      ]
+    },
+    {
+      "id": "10",
+      "text": "тыф=ра кʼмыт-ку мы-хаб-д",
+      "translation": "Он-то на охоте обычно промышлял",
+      "tokens": [
+        {
+          "itoken": "1",
+          "token": "тыф=ра",
+          "lemma": "тыф",
+          "pos": "NOUN",
+          "tagsets": [
+            [
+              "Case=Abs",
+              "Emphatic=Yes",
+              "Number=Sing"
+            ]
+          ],
+          "glosses": "EMPH"
+        },
+        {
+          "itoken": "2",
+          "token": "кʼмыт-ку",
+          "lemma": "кʼмыт",
+          "pos": "NOUN",
+          "tagsets": [
+            [
+              "Case=Loc",
+              "Number=Sing"
+            ]
+          ],
+          "glosses": "LOC"
+        },
+        {
+          "itoken": "3",
+          "token": "мы-хаб-д",
+          "lemma": "мы",
+          "pos": "VERB",
+          "tagsets": [
+            [
+              "Aspect=Hab",
+              "Mood=Ind",
+              "Tense=Pres_Aor"
+            ]
+          ],
+          "glosses": "HAB.IND"
+        }
+      ]
+    },
+    {
+      "id": "11",
+      "text": "тыф мыр-ку ирг-ахт кеӈ-гу-ны мы-й-д",
+      "translation": "В лесу он, будучи хорошим охотником, промышлял",
+      "tokens": [
+        {
+          "itoken": "1",
+          "token": "тыф",
+          "lemma": "тыф",
+          "pos": "NOUN",
+          "tagsets": [
+            [
+              "Case=Abs",
+              "Number=Sing"
+            ]
+          ],
+          "glosses": "_"
+        },
+        {
+          "itoken": "2",
+          "token": "мыр-ку",
+          "lemma": "мыр",
+          "pos": "NOUN",
+          "tagsets": [
+            [
+              "Case=Loc",
+              "Number=Sing"
+            ]
+          ],
+          "glosses": "LOC"
+        },
+        {
+          "itoken": "3",
+          "token": "ирг-ахт",
+          "lemma": "ирг",
+          "pos": "NOUN",
+          "tagsets": [
+            [
+              "Case=Abs",
+              "Number=Sing"
+            ]
+          ],
+          "glosses": "_"
+        },
+        {
+          "itoken": "4",
+          "token": "кеӈ-гу-ны",
+          "lemma": "кеӈ",
+          "pos": "VERB",
+          "tagsets": [
+            [
+              "VerbForm=Conv",
+              "Voice=Caus"
+            ]
+          ],
+          "glosses": "CAUS.CONV"
+        },
+        {
+          "itoken": "5",
+          "token": "мы-й-д",
+          "lemma": "мы",
+          "pos": "VERB",
+          "tagsets": [
+            [
+              "Mood=Ind",
+              "Tense=Pres_Aor"
+            ]
+          ],
+          "glosses": "IND.IND"
+        }
+      ]
+    },
+    {
+      "id": "12",
+      "text": "ирг чо-ғун тыф ны-пʼа-й-д",
+      "translation": "Медведя от рыбы он отличал",
+      "tokens": [
+        {
+          "itoken": "1",
+          "token": "ирг",
+          "lemma": "ирг",
+          "pos": "NOUN",
+          "tagsets": [
+            [
+              "Case=Abs",
+              "Number=Sing"
+            ]
+          ],
+          "glosses": "_"
+        },
+        {
+          "itoken": "2",
+          "token": "чо-ғун",
+          "lemma": "чо",
+          "pos": "NOUN",
+          "tagsets": [
+            [
+              "Case=Abl",
+              "Number=Sing"
+            ]
+          ],
+          "glosses": "ABL"
+        },
+        {
+          "itoken": "3",
+          "token": "тыф",
+          "lemma": "тыф",
+          "pos": "NOUN",
+          "tagsets": [
+            [
+              "Case=Abs",
+              "Number=Sing"
+            ]
+          ],
+          "glosses": "_"
+        },
+        {
+          "itoken": "4",
+          "token": "ны-пʼа-й-д",
+          "lemma": "ны",
+          "pos": "VERB",
+          "tagsets": [
+            [
+              "Mood=Ind",
+              "Number=Sing",
+              "Person=3",
+              "Tense=Pres_Aor"
+            ]
+          ],
+          "glosses": "3SG.IND.IND"
+        }
+      ]
+    },
+    {
+      "id": "13",
+      "text": "тыф=ке ирг ны-ви-прог-д",
+      "translation": "Он тоже медведя видел (в тот момент)",
+      "tokens": [
+        {
+          "itoken": "1",
+          "token": "тыф=ке",
+          "lemma": "тыф",
+          "pos": "NOUN",
+          "tagsets": [
+            [
+              "Add=Yes",
+              "Case=Abs",
+              "Number=Sing"
+            ]
+          ],
+          "glosses": "ADD"
+        },
+        {
+          "itoken": "2",
+          "token": "ирг",
+          "lemma": "ирг",
+          "pos": "NOUN",
+          "tagsets": [
+            [
+              "Case=Abs",
+              "Number=Sing"
+            ]
+          ],
+          "glosses": "_"
+        },
+        {
+          "itoken": "3",
+          "token": "ны-ви-прог-д",
+          "lemma": "ны",
+          "pos": "VERB",
+          "tagsets": [
+            [
+              "Aspect=Prog",
+              "Mood=Ind",
+              "Number=Sing",
+              "Person=3",
+              "Tense=Pres_Aor"
+            ]
+          ],
+          "glosses": "3SG.PROG.IND"
+        }
+      ]
+    },
+    {
+      "id": "14",
+      "text": "ӈыӈ пʼ-рыӈ-гу-ин вы-ға-во",
+      "translation": "Мать, позови детей!",
+      "tokens": [
+        {
+          "itoken": "1",
+          "token": "ӈыӈ",
+          "lemma": "ӈыӈ",
+          "pos": "NOUN",
+          "tagsets": [
+            [
+              "Case=Abs",
+              "Number=Sing"
+            ]
+          ],
+          "glosses": "_"
+        },
+        {
+          "itoken": "2",
+          "token": "пʼ-рыӈ-гу-ин",
+          "lemma": "пʼ-рыӈ-гу-ин",
+          "pos": "NOUN",
+          "tagsets": [
+            [
+              "Case=Abs",
+              "Number=Sing"
+            ]
+          ],
+          "glosses": "_"
+        },
+        {
+          "itoken": "3",
+          "token": "вы-ға-во",
+          "lemma": "вы",
+          "pos": "VERB",
+          "tagsets": [
+            [
+              "Mood=Imp",
+              "Person=2"
+            ]
+          ],
+          "glosses": "2.IMP"
+        }
+      ]
+    },
+    {
+      "id": "15",
+      "text": "тыф мыр-ғун ны-тʼу-й-ра",
+      "translation": "Он-таки пришёл из лесу",
+      "tokens": [
+        {
+          "itoken": "1",
+          "token": "тыф",
+          "lemma": "тыф",
+          "pos": "NOUN",
+          "tagsets": [
+            [
+              "Case=Abs",
+              "Number=Sing"
+            ]
+          ],
+          "glosses": "_"
+        },
+        {
+          "itoken": "2",
+          "token": "мыр-ғун",
+          "lemma": "мыр",
+          "pos": "NOUN",
+          "tagsets": [
+            [
+              "Case=Abl",
+              "Number=Sing"
+            ]
+          ],
+          "glosses": "ABL"
+        },
+        {
+          "itoken": "3",
+          "token": "ны-тʼу-й-ра",
+          "lemma": "ны",
+          "pos": "VERB",
+          "tagsets": [
+            [
+              "Emphatic=Yes",
+              "Mood=Ind",
+              "Number=Sing",
+              "Person=3",
+              "Tense=Pres_Aor"
+            ]
+          ],
+          "glosses": "3SG.IND.EMPH"
+        }
+      ]
+    },
+    {
+      "id": "16",
+      "text": "ыт-гу=ра нивғ мыр-ку ны-лаӄр-хаб-д",
+      "translation": "А другие люди обычно в лес ходили",
+      "tokens": [
+        {
+          "itoken": "1",
+          "token": "ыт-гу=ра",
+          "lemma": "ыт",
+          "pos": "NOUN",
+          "tagsets": [
+            [
+              "Case=Abs",
+              "Emphatic=Yes",
+              "Number=Plur"
+            ]
+          ],
+          "glosses": "PL.EMPH"
+        },
+        {
+          "itoken": "2",
+          "token": "нивғ",
+          "lemma": "нивғ",
+          "pos": "NOUN",
+          "tagsets": [
+            [
+              "Case=Abs",
+              "Number=Sing"
+            ]
+          ],
+          "glosses": "_"
+        },
+        {
+          "itoken": "3",
+          "token": "мыр-ку",
+          "lemma": "мыр",
+          "pos": "NOUN",
+          "tagsets": [
+            [
+              "Case=Loc",
+              "Number=Sing"
+            ]
+          ],
+          "glosses": "LOC"
+        },
+        {
+          "itoken": "4",
+          "token": "ны-лаӄр-хаб-д",
+          "lemma": "ны",
+          "pos": "VERB",
+          "tagsets": [
+            [
+              "Aspect=Hab",
+              "Mood=Ind",
+              "Number=Sing",
+              "Person=3",
+              "Tense=Pres_Aor"
+            ]
+          ],
+          "glosses": "3SG.HAB.IND"
+        }
+      ]
+    },
+    {
+      "id": "17",
+      "text": "тыф мла нивғ-тоз ирг ны-тʼаңз-д",
+      "translation": "Он вдвоём с человеком поймал медведя",
+      "tokens": [
+        {
+          "itoken": "1",
+          "token": "тыф",
+          "lemma": "тыф",
+          "pos": "NOUN",
+          "tagsets": [
+            [
+              "Case=Abs",
+              "Number=Sing"
+            ]
+          ],
+          "glosses": "_"
+        },
+        {
+          "itoken": "2",
+          "token": "мла",
+          "lemma": "мла",
+          "pos": "NOUN",
+          "tagsets": [
+            [
+              "Case=Abs",
+              "Number=Sing"
+            ]
+          ],
+          "glosses": "_"
+        },
+        {
+          "itoken": "3",
+          "token": "нивғ-тоз",
+          "lemma": "нивғ",
+          "pos": "NOUN",
+          "tagsets": [
+            [
+              "Case=Ins",
+              "Number=Sing"
+            ]
+          ],
+          "glosses": "INST"
+        },
+        {
+          "itoken": "4",
+          "token": "ирг",
+          "lemma": "ирг",
+          "pos": "NOUN",
+          "tagsets": [
+            [
+              "Case=Abs",
+              "Number=Sing"
+            ]
+          ],
+          "glosses": "_"
+        },
+        {
+          "itoken": "5",
+          "token": "ны-тʼаңз-д",
+          "lemma": "ны",
+          "pos": "VERB",
+          "tagsets": [
+            [
+              "Mood=Ind",
+              "Number=Sing",
+              "Person=3",
+              "Tense=Pres_Aor"
+            ]
+          ],
+          "glosses": "3SG.IND"
+        }
+      ]
+    },
+    {
+      "id": "18",
+      "text": "тыф ирг ны-тʼаңз-ны ны-ви-негд",
+      "translation": "Поймав медведя, он не смотрел (на него)",
+      "tokens": [
+        {
+          "itoken": "1",
+          "token": "тыф",
+          "lemma": "тыф",
+          "pos": "NOUN",
+          "tagsets": [
+            [
+              "Case=Abs",
+              "Number=Sing"
+            ]
+          ],
+          "glosses": "_"
+        },
+        {
+          "itoken": "2",
+          "token": "ирг",
+          "lemma": "ирг",
+          "pos": "NOUN",
+          "tagsets": [
+            [
+              "Case=Abs",
+              "Number=Sing"
+            ]
+          ],
+          "glosses": "_"
+        },
+        {
+          "itoken": "3",
+          "token": "ны-тʼаңз-ны",
+          "lemma": "ны",
+          "pos": "VERB",
+          "tagsets": [
+            [
+              "Number=Sing",
+              "Person=3",
+              "VerbForm=Conv"
+            ]
+          ],
+          "glosses": "3SG.CONV"
+        },
+        {
+          "itoken": "4",
+          "token": "ны-ви-негд",
+          "lemma": "ны",
+          "pos": "NOUN",
+          "tagsets": [
+            [
+              "Case=Abs",
+              "Mood=Ind",
+              "Number=Sing",
+              "Person=3",
+              "Polarity=Neg"
+            ]
+          ],
+          "glosses": "3SG.NEG.IND"
+        }
+      ]
+    },
+    {
+      "id": "19",
+      "text": "пʼ-рыӈ тʼатл-ку ны-ривр-фут-д",
+      "translation": "Ребёнок будет слушать рассказ",
+      "tokens": [
+        {
+          "itoken": "1",
+          "token": "пʼ-рыӈ",
+          "lemma": "пʼ-рыӈ",
+          "pos": "NOUN",
+          "tagsets": [
+            [
+              "Case=Abs",
+              "Number=Sing"
+            ]
+          ],
+          "glosses": "_"
+        },
+        {
+          "itoken": "2",
+          "token": "тʼатл-ку",
+          "lemma": "тʼатл",
+          "pos": "NOUN",
+          "tagsets": [
+            [
+              "Case=Loc",
+              "Number=Sing"
+            ]
+          ],
+          "glosses": "LOC"
+        },
+        {
+          "itoken": "3",
+          "token": "ны-ривр-фут-д",
+          "lemma": "ны",
+          "pos": "VERB",
+          "tagsets": [
+            [
+              "Mood=Ind",
+              "Number=Sing",
+              "Person=3",
+              "Tense=Fut"
+            ]
+          ],
+          "glosses": "3SG.FUT.IND"
+        }
+      ]
+    },
+    {
+      "id": "20",
+      "text": "тыф-гу ирг-ла мы-хаб-ны-ра кеӈ-гу-д",
+      "translation": "Они, постоянно охотясь на медведя, преуспели",
+      "tokens": [
+        {
+          "itoken": "1",
+          "token": "тыф-гу",
+          "lemma": "тыф",
+          "pos": "NOUN",
+          "tagsets": [
+            [
+              "Case=Abs",
+              "Number=Plur"
+            ]
+          ],
+          "glosses": "PL"
+        },
+        {
+          "itoken": "2",
+          "token": "ирг-ла",
+          "lemma": "ирг",
+          "pos": "NOUN",
+          "tagsets": [
+            [
+              "Case=Abs",
+              "Number=Sing"
+            ]
+          ],
+          "glosses": "_"
+        },
+        {
+          "itoken": "3",
+          "token": "мы-хаб-ны-ра",
+          "lemma": "мы",
+          "pos": "VERB",
+          "tagsets": [
+            [
+              "Aspect=Hab",
+              "Emphatic=Yes",
+              "Tense=Pres_Aor",
+              "VerbForm=Conv"
+            ]
+          ],
+          "glosses": "HAB.CONV.EMPH"
+        },
+        {
+          "itoken": "4",
+          "token": "кеӈ-гу-д",
+          "lemma": "кеӈ",
+          "pos": "VERB",
+          "tagsets": [
+            [
+              "Mood=Ind",
+              "Tense=Pres_Aor",
+              "Voice=Caus"
+            ]
+          ],
+          "glosses": "CAUS.IND"
+        }
+      ]
+    }
+  ],
+  "source": "nivkh_sample_extended",
+  "language": "niv"
+}

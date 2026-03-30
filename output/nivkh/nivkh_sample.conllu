@@ -1,0 +1,61 @@
+# sent_id = 1
+# text = чʼо ытик нивғ-ғун тʼатл ӈа-й-ра
+# translation = У одного человека был рассказ
+1	чʼо	чʼо	NUM	_	_	_	_	_	_
+2	ытик	ытик	NUM	_	_	_	_	_	_
+3	нивғ-ғун	нивғ	NOUN	_	Case=Abl|Number=Sing	_	_	_	_
+4	тʼатл	тʼатл	NOUN	_	Case=Abs|Number=Sing	_	_	_	_
+5	ӈа-й-ра	ӈа	VERB	_	Emphatic=Yes|Mood=Ind|Tense=Pres_Aor	_	_	_	_
+
+# sent_id = 2
+# text = тыф ирг-ахт кеӈ-гу-д
+# translation = Он был хорошим охотником на медведей
+1	тыф	тыф	NOUN	_	Case=Abs|Number=Sing	_	_	_	_
+2	ирг-ахт	ирг	NOUN	_	Case=Abs|Number=Sing	_	_	_	_
+3	кеӈ-гу-д	кеӈ	VERB	_	Mood=Ind|Tense=Pres_Aor|Voice=Caus	_	_	_	_
+
+# sent_id = 3
+# text = ытик пʼрыӈ ӈа-й-д
+# translation = У него был один ребёнок
+1	ытик	ытик	NUM	_	_	_	_	_	_
+2	пʼрыӈ	пʼрыӈ	NOUN	_	Case=Abs|Number=Sing	_	_	_	_
+3	ӈа-й-д	ӈа	VERB	_	Mood=Ind|Tense=Pres_Aor	_	_	_	_
+
+# sent_id = 4
+# text = тыф пʼрыӈ-ин тыф-тоз имги ны-лаӄр-д
+# translation = Со своим ребёнком он вместе ходил
+1	тыф	тыф	NOUN	_	Case=Abs|Number=Sing	_	_	_	_
+2	пʼрыӈ-ин	пʼрыӈ	NOUN	_	Case=Dat|Number=Sing	_	_	_	_
+3	тыф-тоз	тыф	NOUN	_	Case=Ins|Number=Sing	_	_	_	_
+4	имги	имги	NOUN	_	Case=Abs|Number=Sing	_	_	_	_
+5	ны-лаӄр-д	ны	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres_Aor	_	_	_	_
+
+# sent_id = 5
+# text = ирг-ахт тыф пʼрыӈ-ин вила-й-д
+# translation = Охотник на медведей учил своего ребёнка
+1	ирг-ахт	ирг	NOUN	_	Case=Abs|Number=Sing	_	_	_	_
+2	тыф	тыф	NOUN	_	Case=Abs|Number=Sing	_	_	_	_
+3	пʼрыӈ-ин	пʼрыӈ	NOUN	_	Case=Dat|Number=Sing	_	_	_	_
+4	вила-й-д	вила	VERB	_	Mood=Ind|Tense=Pres_Aor	_	_	_	_
+
+# sent_id = 6
+# text = пʼрыӈ ма-ғун ирг-ла пʼа-й-д
+# translation = Ребёнок от отца знал, как убивать медведя
+1	пʼрыӈ	пʼрыӈ	NOUN	_	Case=Abs|Number=Sing	_	_	_	_
+2	ма-ғун	ма	NOUN	_	Case=Abl|Number=Sing	_	_	_	_
+3	ирг-ла	ирг	NOUN	_	Case=Abs|Number=Sing	_	_	_	_
+4	пʼа-й-д	пʼа	VERB	_	Mood=Ind|Tense=Pres_Aor	_	_	_	_
+
+# sent_id = 7
+# text = тыф пʼрыӈ пылг-и-д
+# translation = Его ребёнок вырос
+1	тыф	тыф	NOUN	_	Case=Abs|Number=Sing	_	_	_	_
+2	пʼрыӈ	пʼрыӈ	NOUN	_	Case=Abs|Number=Sing	_	_	_	_
+3	пылг-и-д	пылг	VERB	_	Mood=Ind|Tense=Pres_Aor	_	_	_	_
+
+# sent_id = 8
+# text = тыф кʼмыт-ахт кеӈ-гу-д
+# translation = Он стал хорошим охотником
+1	тыф	тыф	NOUN	_	Case=Abs|Number=Sing	_	_	_	_
+2	кʼмыт-ахт	кʼмыт	NOUN	_	Case=Abs|Number=Sing	_	_	_	_
+3	кеӈ-гу-д	кеӈ	VERB	_	Mood=Ind|Tense=Pres_Aor|Voice=Caus	_	_	_	_

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Инструменты полевой лингвистики</title>
+    <link rel="stylesheet" href="/static/styles.css?v=3">
+</head>
+<body class="page-home">
+    <header>
+        <nav>
+            <a href="/" class="nav-brand">Инструменты полевой лингвистики</a>
+            <div class="nav-links">
+                <a href="/" class="active">Главная</a>
+                <a href="/translator">Транслятор</a>
+                <a href="/lexicograph">Лексикограф</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container page-shell">
+        <section class="hero hero-home">
+            <p class="eyebrow">Fieldwork Linguistics Toolkit</p>
+            <h1>Инструменты полевой лингвистики</h1>
+            <p class="subtitle">
+                Набор инструментов для автоматизации полевой лингвистической работы:
+                конвертация глоссированных текстов в корпусные форматы,
+                построение словников и поиск по корпусу.
+            </p>
+        </section>
+
+        <section class="cards-grid">
+            <a href="/translator" class="card">
+                <div class="card-top">
+                    <div class="card-icon" aria-hidden="true">TR</div>
+                    <span class="card-link-label">Открыть</span>
+                </div>
+                <p class="card-kicker">Конвертация</p>
+                <h2>Транслятор</h2>
+                <p>
+                    Конвертация глоссированных текстов (Leipzig Glossing Rules)
+                    в корпусные форматы JSON и CoNLL-U. Загрузите файл с глоссированным
+                    текстом и выберите языковую схему.
+                </p>
+            </a>
+
+            <a href="/lexicograph" class="card">
+                <div class="card-top">
+                    <div class="card-icon" aria-hidden="true">LX</div>
+                    <span class="card-link-label">Открыть</span>
+                </div>
+                <p class="card-kicker">Словник</p>
+                <h2>Лексикограф</h2>
+                <p>
+                    Автоматическое создание словников из глоссированных текстов.
+                    Извлекает леммы, переводы и грамматическую информацию
+                    из корпусных данных.
+                </p>
+            </a>
+
+            <a href="/search/nivkh" class="card">
+                <div class="card-top">
+                    <div class="card-icon" aria-hidden="true">SR</div>
+                    <span class="card-link-label">Открыть</span>
+                </div>
+                <p class="card-kicker">Корпус</p>
+                <h2>Поиск по корпусу</h2>
+                <p>
+                    Поиск по морфологически аннотированному корпусу.
+                    Фильтрация по словоформам, леммам, частям речи
+                    и грамматическим признакам.
+                </p>
+            </a>
+        </section>
+
+        <section class="info-section surface-panel">
+            <div class="section-header">
+                <p class="eyebrow">Языковые схемы</p>
+                <h2>Доступные языки</h2>
+            </div>
+            <div id="languagesList" class="languages-list">
+                <p class="loading-text">Загрузка списка языков...</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Инструменты полевой лингвистики</p>
+    </footer>
+
+    <script src="/static/app.js"></script>
+    <script>
+        loadAvailableLanguages();
+    </script>
+</body>
+</html>

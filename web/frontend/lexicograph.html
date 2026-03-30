@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лексикограф — Инструменты полевой лингвистики</title>
+    <link rel="stylesheet" href="/static/styles.css?v=3">
+</head>
+<body class="page-tool">
+    <header>
+        <nav>
+            <a href="/" class="nav-brand">Инструменты полевой лингвистики</a>
+            <div class="nav-links">
+                <a href="/">Главная</a>
+                <a href="/translator">Транслятор</a>
+                <a href="/lexicograph" class="active">Лексикограф</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container page-shell">
+        <section class="page-intro">
+            <p class="eyebrow">Лексикография</p>
+            <h1>Лексикограф</h1>
+            <p class="page-description">
+                Автоматическое создание словников из глоссированных текстов.
+                Загрузите файл с глоссированным текстом (.txt) в формате
+                Leipzig Glossing Rules.
+            </p>
+        </section>
+
+        <form id="lexicographForm" class="upload-form">
+            <div class="form-group">
+                <label for="lexFileInput">Файл с глоссированным текстом (.txt)</label>
+                <div class="file-upload-area" id="lexFileDropArea">
+                    <input type="file" id="lexFileInput" name="file" accept=".txt" class="file-input">
+                    <div class="file-upload-label">
+                        <span class="file-upload-icon" aria-hidden="true">TXT</span>
+                        <p>Перетащите файл сюда или нажмите для выбора</p>
+                        <p class="file-name" id="lexFileName"></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-actions">
+                <button type="button" class="btn btn-primary" onclick="buildDictionary()">
+                    Создать словник
+                </button>
+            </div>
+        </form>
+
+        <div id="lexStatus" class="status-message" style="display: none;"></div>
+
+        <div id="lexResults" class="results-section" style="display: none;">
+            <h2>Словник</h2>
+            <div class="results-meta" id="lexMeta"></div>
+
+            <div class="result-actions">
+                <button class="btn btn-small" onclick="downloadDictionary('json')">Скачать JSON</button>
+                <button class="btn btn-small" onclick="downloadDictionary('txt')">Скачать TXT</button>
+                <button class="btn btn-small" onclick="copyDictionary()">Копировать</button>
+            </div>
+
+            <div id="dictionaryPreview" class="dictionary-preview"></div>
+        </div>
+
+        <a href="/" class="back-link">&larr; Вернуться на главную</a>
+    </main>
+
+    <footer>
+        <p>Инструменты полевой лингвистики</p>
+    </footer>
+
+    <script src="/static/app.js?v=2"></script>
+    <script>
+        setupFileUpload('lexFileInput', 'lexFileDropArea', 'lexFileName');
+    </script>
+</body>
+</html>

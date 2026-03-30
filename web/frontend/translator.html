@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Транслятор — Инструменты полевой лингвистики</title>
+    <link rel="stylesheet" href="/static/styles.css?v=3">
+</head>
+<body class="page-tool">
+    <header>
+        <nav>
+            <a href="/" class="nav-brand">Инструменты полевой лингвистики</a>
+            <div class="nav-links">
+                <a href="/">Главная</a>
+                <a href="/translator" class="active">Транслятор</a>
+                <a href="/lexicograph">Лексикограф</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container page-shell">
+        <section class="page-intro">
+            <p class="eyebrow">Конвертация корпуса</p>
+            <h1>Транслятор</h1>
+            <p class="page-description">
+                Конвертация глоссированных текстов в корпусные форматы.
+                Загрузите файл с глоссированным текстом (.txt) в формате
+                Leipzig Glossing Rules и выберите языковую схему.
+            </p>
+        </section>
+
+        <form id="translatorForm" class="upload-form">
+            <div class="form-group">
+                <label for="fileInput">Файл с глоссированным текстом (.txt)</label>
+                <div class="file-upload-area" id="fileDropArea">
+                    <input type="file" id="fileInput" name="file" accept=".txt" class="file-input">
+                    <div class="file-upload-label">
+                        <span class="file-upload-icon" aria-hidden="true">TXT</span>
+                        <p>Перетащите файл сюда или нажмите для выбора</p>
+                        <p class="file-name" id="fileName"></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="schemeSelect">Языковая схема</label>
+                <select id="schemeSelect" name="scheme_name" class="form-select">
+                    <option value="">Загрузка схем...</option>
+                </select>
+            </div>
+
+            <div class="form-actions">
+                <button type="button" class="btn btn-primary" onclick="translateFile('json')">
+                    Конвертировать в JSON
+                </button>
+                <button type="button" class="btn btn-primary" onclick="translateFile('conllu')">
+                    Конвертировать в CoNLL-U
+                </button>
+                <button type="button" class="btn btn-accent" onclick="translateFile('all')">
+                    Конвертировать всё
+                </button>
+            </div>
+        </form>
+
+        <div id="translatorStatus" class="status-message" style="display: none;"></div>
+
+        <div id="translatorResults" class="results-section" style="display: none;">
+            <h2>Результаты</h2>
+            <div class="results-meta" id="resultsMeta"></div>
+
+            <div id="jsonResult" class="result-panel" style="display: none;">
+                <h3>JSON</h3>
+                <div class="result-actions">
+                    <button class="btn btn-small" onclick="downloadResult('json')">Скачать JSON</button>
+                    <button class="btn btn-small" onclick="copyResult('json')">Копировать</button>
+                </div>
+                <pre class="result-output" id="jsonOutput"></pre>
+            </div>
+
+            <div id="conlluResult" class="result-panel" style="display: none;">
+                <h3>CoNLL-U</h3>
+                <div class="result-actions">
+                    <button class="btn btn-small" onclick="downloadResult('conllu')">Скачать CoNLL-U</button>
+                    <button class="btn btn-small" onclick="copyResult('conllu')">Копировать</button>
+                </div>
+                <pre class="result-output" id="conlluOutput"></pre>
+            </div>
+        </div>
+
+        <a href="/" class="back-link">&larr; Вернуться на главную</a>
+    </main>
+
+    <footer>
+        <p>Инструменты полевой лингвистики</p>
+    </footer>
+
+    <script src="/static/app.js"></script>
+    <script>
+        loadSchemes();
+        setupFileUpload('fileInput', 'fileDropArea', 'fileName');
+    </script>
+</body>
+</html>

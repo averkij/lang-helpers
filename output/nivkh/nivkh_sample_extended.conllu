@@ -1,0 +1,156 @@
+# sent_id = 1
+# text = чʼо ытик нивғ-ғун тʼатл ӈа-й-ра
+# translation = У одного человека был рассказ
+1	чʼо	чʼо	NUM	_	_	_	_	_	_
+2	ытик	ытик	NUM	_	_	_	_	_	_
+3	нивғ-ғун	нивғ	NOUN	_	Case=Abl|Number=Sing	_	_	_	_
+4	тʼатл	тʼатл	NOUN	_	Case=Abs|Number=Sing	_	_	_	_
+5	ӈа-й-ра	ӈа	VERB	_	Emphatic=Yes|Mood=Ind|Tense=Pres_Aor	_	_	_	_
+
+# sent_id = 2
+# text = тыф ирг-ахт кеӈ-гу-д
+# translation = Он был хорошим охотником на медведей
+1	тыф	тыф	NOUN	_	Case=Abs|Number=Sing	_	_	_	_
+2	ирг-ахт	ирг	NOUN	_	Case=Abs|Number=Sing	_	_	_	_
+3	кеӈ-гу-д	кеӈ	VERB	_	Mood=Ind|Tense=Pres_Aor|Voice=Caus	_	_	_	_
+
+# sent_id = 3
+# text = тыф пʼ-рыӈ-ин тыф-тоз имги ны-лаӄр-д
+# translation = Со своим ребёнком он вместе ходил
+1	тыф	тыф	NOUN	_	Case=Abs|Number=Sing	_	_	_	_
+2	пʼ-рыӈ-ин	пʼ	NOUN	_	Case=Dat|Number=Sing|Poss=Yes	_	_	_	_
+3	тыф-тоз	тыф	NOUN	_	Case=Ins|Number=Sing	_	_	_	_
+4	имги	имги	NOUN	_	Case=Abs|Number=Sing	_	_	_	_
+5	ны-лаӄр-д	ны	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres_Aor	_	_	_	_
+
+# sent_id = 4
+# text = пʼ-рыӈ ма-ғун ирг-ла пʼа-й-д
+# translation = Ребёнок от отца знал, как убивать медведя
+1	пʼ-рыӈ	пʼ-рыӈ	NOUN	_	Case=Abs|Number=Sing	_	_	_	_
+2	ма-ғун	ма	NOUN	_	Case=Abl|Number=Sing	_	_	_	_
+3	ирг-ла	ирг	NOUN	_	Case=Abs|Number=Sing	_	_	_	_
+4	пʼа-й-д	пʼа	VERB	_	Mood=Ind|Tense=Pres_Aor	_	_	_	_
+
+# sent_id = 5
+# text = ӈыӈ тыф ирг-ку ны-вила-й-д
+# translation = Мать учила его на медвежьей охоте
+1	ӈыӈ	ӈыӈ	NOUN	_	Case=Abs|Number=Sing	_	_	_	_
+2	тыф	тыф	NOUN	_	Case=Abs|Number=Sing	_	_	_	_
+3	ирг-ку	ирг	NOUN	_	Case=Loc|Number=Sing	_	_	_	_
+4	ны-вила-й-д	ны	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres_Aor	_	_	_	_
+
+# sent_id = 6
+# text = мыр-ку тулғ ны-раӈ-д
+# translation = В лесу он развёл огонь
+1	мыр-ку	мыр	NOUN	_	Case=Loc|Number=Sing	_	_	_	_
+2	тулғ	тулғ	NOUN	_	Case=Abs|Number=Sing	_	_	_	_
+3	ны-раӈ-д	ны	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres_Aor	_	_	_	_
+
+# sent_id = 7
+# text = тыф пилг-и-ны-ра кʼмыт-ку мы-й-д
+# translation = Когда он вырос, он стал заниматься охотой
+1	тыф	тыф	NOUN	_	Case=Abs|Number=Sing	_	_	_	_
+2	пилг-и-ны-ра	пилг	VERB	_	Emphatic=Yes|Tense=Pres_Aor|VerbForm=Conv	_	_	_	_
+3	кʼмыт-ку	кʼмыт	NOUN	_	Case=Loc|Number=Sing	_	_	_	_
+4	мы-й-д	мы	VERB	_	Mood=Ind|Tense=Pres_Aor	_	_	_	_
+
+# sent_id = 8
+# text = ирг-гу мыр-ку ны-лаӄр-итр-д
+# translation = Медведи в лесу ходили туда-сюда
+1	ирг-гу	ирг	NOUN	_	Case=Abs|Number=Plur	_	_	_	_
+2	мыр-ку	мыр	NOUN	_	Case=Loc|Number=Sing	_	_	_	_
+3	ны-лаӄр-итр-д	ны	VERB	_	Aspect=Iter|Mood=Ind|Number=Sing|Person=3|Tense=Pres_Aor	_	_	_	_
+
+# sent_id = 9
+# text = ыт чʼо нивғ тыф-тоз ны-тʼу-й-д
+# translation = Ещё один человек пришёл к нему
+1	ыт	ыт	NOUN	_	Case=Abs|Number=Sing	_	_	_	_
+2	чʼо	чʼо	NUM	_	_	_	_	_	_
+3	нивғ	нивғ	NOUN	_	Case=Abs|Number=Sing	_	_	_	_
+4	тыф-тоз	тыф	NOUN	_	Case=Ins|Number=Sing	_	_	_	_
+5	ны-тʼу-й-д	ны	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres_Aor	_	_	_	_
+
+# sent_id = 10
+# text = тыф=ра кʼмыт-ку мы-хаб-д
+# translation = Он-то на охоте обычно промышлял
+1	тыф=ра	тыф	NOUN	_	Case=Abs|Emphatic=Yes|Number=Sing	_	_	_	_
+2	кʼмыт-ку	кʼмыт	NOUN	_	Case=Loc|Number=Sing	_	_	_	_
+3	мы-хаб-д	мы	VERB	_	Aspect=Hab|Mood=Ind|Tense=Pres_Aor	_	_	_	_
+
+# sent_id = 11
+# text = тыф мыр-ку ирг-ахт кеӈ-гу-ны мы-й-д
+# translation = В лесу он, будучи хорошим охотником, промышлял
+1	тыф	тыф	NOUN	_	Case=Abs|Number=Sing	_	_	_	_
+2	мыр-ку	мыр	NOUN	_	Case=Loc|Number=Sing	_	_	_	_
+3	ирг-ахт	ирг	NOUN	_	Case=Abs|Number=Sing	_	_	_	_
+4	кеӈ-гу-ны	кеӈ	VERB	_	VerbForm=Conv|Voice=Caus	_	_	_	_
+5	мы-й-д	мы	VERB	_	Mood=Ind|Tense=Pres_Aor	_	_	_	_
+
+# sent_id = 12
+# text = ирг чо-ғун тыф ны-пʼа-й-д
+# translation = Медведя от рыбы он отличал
+1	ирг	ирг	NOUN	_	Case=Abs|Number=Sing	_	_	_	_
+2	чо-ғун	чо	NOUN	_	Case=Abl|Number=Sing	_	_	_	_
+3	тыф	тыф	NOUN	_	Case=Abs|Number=Sing	_	_	_	_
+4	ны-пʼа-й-д	ны	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres_Aor	_	_	_	_
+
+# sent_id = 13
+# text = тыф=ке ирг ны-ви-прог-д
+# translation = Он тоже медведя видел (в тот момент)
+1	тыф=ке	тыф	NOUN	_	Add=Yes|Case=Abs|Number=Sing	_	_	_	_
+2	ирг	ирг	NOUN	_	Case=Abs|Number=Sing	_	_	_	_
+3	ны-ви-прог-д	ны	VERB	_	Aspect=Prog|Mood=Ind|Number=Sing|Person=3|Tense=Pres_Aor	_	_	_	_
+
+# sent_id = 14
+# text = ӈыӈ пʼ-рыӈ-гу-ин вы-ға-во
+# translation = Мать, позови детей!
+1	ӈыӈ	ӈыӈ	NOUN	_	Case=Abs|Number=Sing	_	_	_	_
+2	пʼ-рыӈ-гу-ин	пʼ-рыӈ-гу-ин	NOUN	_	Case=Abs|Number=Sing	_	_	_	_
+3	вы-ға-во	вы	VERB	_	Mood=Imp|Person=2	_	_	_	_
+
+# sent_id = 15
+# text = тыф мыр-ғун ны-тʼу-й-ра
+# translation = Он-таки пришёл из лесу
+1	тыф	тыф	NOUN	_	Case=Abs|Number=Sing	_	_	_	_
+2	мыр-ғун	мыр	NOUN	_	Case=Abl|Number=Sing	_	_	_	_
+3	ны-тʼу-й-ра	ны	VERB	_	Emphatic=Yes|Mood=Ind|Number=Sing|Person=3|Tense=Pres_Aor	_	_	_	_
+
+# sent_id = 16
+# text = ыт-гу=ра нивғ мыр-ку ны-лаӄр-хаб-д
+# translation = А другие люди обычно в лес ходили
+1	ыт-гу=ра	ыт	NOUN	_	Case=Abs|Emphatic=Yes|Number=Plur	_	_	_	_
+2	нивғ	нивғ	NOUN	_	Case=Abs|Number=Sing	_	_	_	_
+3	мыр-ку	мыр	NOUN	_	Case=Loc|Number=Sing	_	_	_	_
+4	ны-лаӄр-хаб-д	ны	VERB	_	Aspect=Hab|Mood=Ind|Number=Sing|Person=3|Tense=Pres_Aor	_	_	_	_
+
+# sent_id = 17
+# text = тыф мла нивғ-тоз ирг ны-тʼаңз-д
+# translation = Он вдвоём с человеком поймал медведя
+1	тыф	тыф	NOUN	_	Case=Abs|Number=Sing	_	_	_	_
+2	мла	мла	NOUN	_	Case=Abs|Number=Sing	_	_	_	_
+3	нивғ-тоз	нивғ	NOUN	_	Case=Ins|Number=Sing	_	_	_	_
+4	ирг	ирг	NOUN	_	Case=Abs|Number=Sing	_	_	_	_
+5	ны-тʼаңз-д	ны	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres_Aor	_	_	_	_
+
+# sent_id = 18
+# text = тыф ирг ны-тʼаңз-ны ны-ви-негд
+# translation = Поймав медведя, он не смотрел (на него)
+1	тыф	тыф	NOUN	_	Case=Abs|Number=Sing	_	_	_	_
+2	ирг	ирг	NOUN	_	Case=Abs|Number=Sing	_	_	_	_
+3	ны-тʼаңз-ны	ны	VERB	_	Number=Sing|Person=3|VerbForm=Conv	_	_	_	_
+4	ны-ви-негд	ны	NOUN	_	Case=Abs|Mood=Ind|Number=Sing|Person=3|Polarity=Neg	_	_	_	_
+
+# sent_id = 19
+# text = пʼ-рыӈ тʼатл-ку ны-ривр-фут-д
+# translation = Ребёнок будет слушать рассказ
+1	пʼ-рыӈ	пʼ-рыӈ	NOUN	_	Case=Abs|Number=Sing	_	_	_	_
+2	тʼатл-ку	тʼатл	NOUN	_	Case=Loc|Number=Sing	_	_	_	_
+3	ны-ривр-фут-д	ны	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut	_	_	_	_
+
+# sent_id = 20
+# text = тыф-гу ирг-ла мы-хаб-ны-ра кеӈ-гу-д
+# translation = Они, постоянно охотясь на медведя, преуспели
+1	тыф-гу	тыф	NOUN	_	Case=Abs|Number=Plur	_	_	_	_
+2	ирг-ла	ирг	NOUN	_	Case=Abs|Number=Sing	_	_	_	_
+3	мы-хаб-ны-ра	мы	VERB	_	Aspect=Hab|Emphatic=Yes|Tense=Pres_Aor|VerbForm=Conv	_	_	_	_
+4	кеӈ-гу-д	кеӈ	VERB	_	Mood=Ind|Tense=Pres_Aor|Voice=Caus	_	_	_	_
