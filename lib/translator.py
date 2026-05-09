@@ -34,6 +34,71 @@ _NOUN_GLOSSES = frozenset({
 # Паттерн для распознавания числительных
 _NUM_RE = re.compile(r'^[0-9]+$|^один$|^два$|^три$|^четыре$|^пять$|^шесть$|^семь$|^восемь$|^девять$|^десять$')
 
+_UD_POS_TAGS = frozenset({
+    "ADJ", "ADP", "ADV", "AUX", "CCONJ", "DET", "INTJ", "NOUN",
+    "NUM", "PART", "PRON", "PROPN", "PUNCT", "SCONJ", "SYM", "VERB", "X",
+})
+_POS_VALUE_MAP = {
+    "adj": "ADJ",
+    "adjective": "ADJ",
+    "adp": "ADP",
+    "adv": "ADV",
+    "aux": "AUX",
+    "auxiliary": "AUX",
+    "cconj": "CCONJ",
+    "det": "DET",
+    "intj": "INTJ",
+    "noun": "NOUN",
+    "num": "NUM",
+    "part": "PART",
+    "pron": "PRON",
+    "propn": "PROPN",
+    "sconj": "SCONJ",
+    "verb": "VERB",
+    "x": "X",
+}
+
+
+def _normalise_pos(value: str) -> str | None:
+    value = value.strip()
+    if value.upper() in _UD_POS_TAGS:
+        return value.upper()
+    return _POS_VALUE_MAP.get(value.lower())
+
+
+def _pos_from_mapping(value: str) -> str | None:
+    for part in value.split("|"):
+        part = part.strip()
+        if not part:
+            continue
+        if part.startswith("POS="):
+            return _normalise_pos(part.split("=", 1)[1])
+        if "=" not in part:
+            pos = _normalise_pos(part)
+            if pos:
+                return pos
+    return None
+
+
+def _mapped_values(gloss: str, morphdict: dict[str, str]) -> list[str]:
+    values = []
+    if gloss in morphdict:
+        values.append(morphdict[gloss])
+    for sub_gloss in gloss.split("."):
+        sub_gloss = sub_gloss.strip()
+        if sub_gloss and sub_gloss != gloss and sub_gloss in morphdict:
+            values.append(morphdict[sub_gloss])
+    return values
+
+
+def _add_features_from_mapping(value: str, features: list[str]) -> None:
+    for feat in value.split("|"):
+        feat = feat.strip()
+        if not feat or feat.startswith("POS=") or "=" not in feat:
+            continue
+        if feat not in features:
+            features.append(feat)
+
 
 def _determine_pos(word: Word, scheme: ModuleType) -> str:
     """
@@ -47,15 +112,18 @@ def _determine_pos(word: Word, scheme: ModuleType) -> str:
     - По умолчанию -> NOUN
     """
     grammatical_glosses = set()
-    has_lexical = False
+    morphdict = getattr(scheme, "morphdict", {})
 
     for morpheme in word.morphemes:
         if morpheme.is_grammatical:
             # Разбираем слитные категории (напр. 3SG)
             gloss = morpheme.gloss
             grammatical_glosses.add(gloss)
+            for value in _mapped_values(gloss, morphdict):
+                mapped_pos = _pos_from_mapping(value)
+                if mapped_pos:
+                    return mapped_pos
         else:
-            has_lexical = True
             # Проверяем, не числительное ли
             if _NUM_RE.match(morpheme.gloss):
                 return "NUM"
@@ -92,26 +160,8 @@ def _get_features(word: Word, pos: str, scheme: ModuleType) -> list[str]:
 
         gloss = morpheme.gloss
 
-        # Сначала пробуем найти целую глоссу (напр. "3SG")
-        if gloss in morphdict:
-            value = morphdict[gloss]
-            # Значение может содержать несколько признаков через |
-            if value and not value.isupper():  # Не POS-тег типа "INTJ"
-                for feat in value.split("|"):
-                    if feat not in features:
-                        features.append(feat)
-            continue
-
-        # Пробуем разбить слитные категории по точкам
-        sub_glosses = gloss.split(".")
-        for sg in sub_glosses:
-            sg = sg.strip()
-            if sg in morphdict:
-                value = morphdict[sg]
-                if value and not value.isupper():
-                    for feat in value.split("|"):
-                        if feat not in features:
-                            features.append(feat)
+        for value in _mapped_values(gloss, morphdict):
+            _add_features_from_mapping(value, features)
 
     # Применяем дефолты из схемы
     if pos in defaults_map:

@@ -1,0 +1,93 @@
+1>        MAJMUN        DA        KIOZ-LIUK-LIAR
+1<        обезьяна        и        глаза-NMN-PL
+1=        Мартышка и очки
+
+2>        Kartlych-ka        Majmun        sokur-lan-dy-0,
+2<        старость-DAT        мартышка        слепой-VRB-PST-3.SG
+2=        Мартышка к старости слаба глазами стала;
+
+3>        Dunja-dan        ol        tuj-du-0,
+3<        мир-ABL        она        слышать-PST-3.SG
+3=        А у людей она слыхала,
+
+4>        Ki        bu        chorluch        tiuviul
+4<        чтобы        этот        подлость        NEG
+
+5>        ullu                barybe;
+5<        большой        совсем
+4_5=        Что это зло еще не так большой руки:
+
+6>        Ėgier        kioz-liuk-liar-ni                kabul-0                et-mia.
+6<        если        глаза-NMN-PL-ACC        получать-CONV        AUX-INF
+6=        Лишь стоит завести Очки.
+# (= kabul et-mia)
+
+7>        Alty        kioz-liuk-liar-ni                ol        al-dy-0;
+7<        шесть        глаза-NMN-PL-ACC        она        брать-PST-3.SG
+7=        Очков с полдюжины себе она достала;
+
+8>        Bur-a-t                        kioz-liuk-liar-be                alej-        bulej;
+8<        вертеть-PRS-3.SG        глаза-NMN-PL-ACC        так        так
+8=        Вертит Очками так и сяк:
+
+9>        Jel-kia                kystyr-a-t,                kujruch-ka        kyjasle-j-t,
+9<        затылок-DAT        давить-PRS-3.SG        хвост-DAT        примерять-PRS-3.SG
+9=        То к темю их прижмет, то их на хвост нанижет,
+
+10>        Ara        iisk-ej-t,                ara        jal-ej-t.
+10<        то        нюхать-PRS-3.SG        то        лизать-PRS-3.SG
+10=        То их понюхает, то их полижет;
+
+11>        Kioz-liuk-liar                kajam                et-m-e-dliar                anar.
+11<        глаза-NMN-PL                могучий        делать-NEG-PRS-3.PL  она.DAT
+11=        Очки не действуют никак.
+
+12>        «Tfu        ucz-suz-luch!»        ajt-a-t,          «bu        teli,
+12<        тьфу        предел-ABE-NMN        говорить-PRS-3.SG        этот        дурак
+12=        «Тьфу пропасть!» говорит она: «и тот дурак,
+
+13>        Kim        tynl-ej-t                        dunja-nyn        alda-mach-lar-ny;
+13<        кто        слушать-PRS-3.SG        мир-GEN        лгать-NMN-PL-ACC
+13=        Кто слушает людских всех врак:
+
+14>        Bar-y-n                kioz-liuk-liar        učiun        maja        alde-j-dlar;
+14<        все-3.SG-ACC        глаза-NMN-PL        для        я.DAT        лгать-PRS-3.PL
+14=        Всё про Очки лишь мне налгали;
+# исправлена орфография, было alda-dliar
+
+15>        Fajda        joch-tur-0                        alar-dan        barybe».
+15<        польза        отсутствовать-HAB-3.SG        они-ABL        целиком
+15=        А проку на́-волос нет в них».
+
+16>        Majmun        jaman-lan-dy-0                        da        kajhy-lych-tan
+16<        обезьяна        зло-VRB-PST-3.SG        и        печаль-NMN-ABL
+16=        Мартышка тут с досады и с печали
+
+17>        Bulej        taš-cha                sal-dy-0                alar-ny
+17<        так        камень-DAT        бросать-PST-3.SG        они-ACC
+17=        О камень так хватила их,
+
+18>        Ki                tišliam-liar-y        iltra-dy-lar.
+18<        Так.как                кусок-PL-3.SG        сверкать-PST-3.PL
+18=        Что только брызги засверкали.
+
+19>        Bulej        bol-a-t                        te                dunja-da;
+19<        так        быть-PRS-3.SG                FOC                мир-LOC
+19=        К несчастью, то ж бывает у людей:
+# проверить грамматику на предмет частицы (?) te
+
+20>        Kierakli                niersia                baha-ny        bil-m-ie-dliar                anar,
+20<        нужный                вещь                     цена-ACC        знать-NEG-PRS-3.PL        она.DAT
+21=        Как ни полезна вещь, - цены не зная ей,
+
+21>        Tili        anyn                  učiun        sioz-iu-n                jaman-ha        ajt-a-t;
+21<        дурак        она.GEN        для        слово-3.SG-ACC          зло-DAT        говорить-PRS-3.SG
+21=        Невежда про нее свой толк всё к худу клонит;
+
+22>        Ėgier        syjly-rach                tili,
+22<        если        почитаемый-COMP        дурак
+22=        А ежели невежда познатней,
+
+23>        Ol        anus        any                siur-a-t.
+23<        он        ещё        её.ACC                гнать-PRS-3.SG
+23=        Так он ее еще и гонит.
