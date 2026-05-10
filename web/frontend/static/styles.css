@@ -225,24 +225,26 @@ h3 {
 }
 
 .page-search-index .container {
-    padding-top: 36px;
+    width: min(1160px, 100%);
+    flex: 0 0 auto;
+    padding-top: 24px;
+    padding-bottom: 28px;
 }
 
 .page-search-index .page-shell {
-    gap: 22px;
+    gap: 18px;
 }
 
-.page-search-index .page-intro {
-    gap: 12px;
-    padding-top: 10px;
+.page-search-index .section-header {
+    margin-bottom: 16px;
 }
 
-.page-search-index .page-intro h1 {
-    font-size: clamp(2.4rem, 4.2vw, 3.8rem);
+.page-search-index .section-header h1 {
+    font-size: clamp(1.8rem, 2.8vw, 2.45rem);
 }
 
-.page-search-index .page-description {
-    font-size: 1rem;
+.page-search-index footer {
+    margin-top: auto;
 }
 
 .hero-home .subtitle {
@@ -362,16 +364,16 @@ h3 {
 .corpora-list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    gap: 16px;
+    gap: 12px;
 }
 
 .corpus-card {
     display: grid;
     align-content: space-between;
-    gap: 14px;
-    min-height: 132px;
-    padding: 20px;
-    border-radius: 16px;
+    gap: 10px;
+    min-height: 92px;
+    padding: 16px;
+    border-radius: 14px;
     border: 1px solid rgba(39, 75, 74, 0.18);
     background:
         linear-gradient(180deg, rgba(255, 255, 255, 0.9), rgba(249, 246, 240, 0.9));
@@ -393,7 +395,7 @@ h3 {
 
 .corpus-card h3 {
     color: var(--color-accent);
-    font-size: 1.15rem;
+    font-size: 1.05rem;
     letter-spacing: 0;
 }
 
@@ -403,7 +405,8 @@ h3 {
 }
 
 .corpora-panel {
-    margin-top: 14px;
+    margin-top: 0;
+    padding: 20px 22px 22px;
 }
 
 .language-tag {
