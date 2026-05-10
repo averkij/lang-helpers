@@ -1,0 +1,181 @@
+# sent_id = 1
+# text = MAJMUN        DA        KIOZ-LIUK-LIAR
+# translation = Мартышка и очки
+1	MAJMUN	MAJMUN	NOUN	_	Case=Nom|Number=Sing	_	_	_	_
+2	DA	DA	NOUN	_	Case=Nom|Number=Sing	_	_	_	_
+3	KIOZ-LIUK-LIAR	KIOZ	NOUN	_	Case=Nom|Number=Plur|VerbForm=Vnoun	_	_	_	_
+
+# sent_id = 2
+# text = Kartlych-ka        Majmun        sokur-lan-dy-0,
+# translation = Мартышка к старости слаба глазами стала;
+1	Kartlych-ka	Kartlych	NOUN	_	Case=Dat|Number=Sing	_	_	_	_
+2	Majmun	Majmun	NOUN	_	Case=Nom|Number=Sing	_	_	_	_
+3	sokur-lan-dy-0,	sokur	VERB	_	Number=Sing|Person=3|Tense=Past|VerbForm=Fin|VerbType=Denom	_	_	_	_
+
+# sent_id = 3
+# text = Dunja-dan        ol        tuj-du-0,
+# translation = А у людей она слыхала,
+1	Dunja-dan	Dunja	NOUN	_	Case=Abl|Number=Sing	_	_	_	_
+2	ol	ol	NOUN	_	Case=Nom|Number=Sing	_	_	_	_
+3	tuj-du-0,	tuj	NOUN	_	Case=Nom|Number=Sing|Person=3|Tense=Past	_	_	_	_
+
+# sent_id = 4
+# text = Ki        bu        chorluch        tiuviul
+# translation = Что это зло еще не так большой руки:
+1	Ki	Ki	NOUN	_	Case=Nom|Number=Sing	_	_	_	_
+2	bu	bu	NOUN	_	Case=Nom|Number=Sing	_	_	_	_
+3	chorluch	chorluch	NOUN	_	Case=Nom|Number=Sing	_	_	_	_
+4	tiuviul	tiuviul	VERB	_	Polarity=Neg|Tense=Pres|VerbForm=Fin	_	_	_	_
+
+# sent_id = 5
+# text = ullu                barybe;
+# translation = Что это зло еще не так большой руки:
+1	ullu	ullu	NOUN	_	Case=Nom|Number=Sing	_	_	_	_
+2	barybe;	barybe;	NOUN	_	Case=Nom|Number=Sing	_	_	_	_
+
+# sent_id = 6
+# text = Ėgier        kioz-liuk-liar-ni                kabul-0                et-mia.
+# translation = Лишь стоит завести Очки.
+1	Ėgier	Ėgier	NOUN	_	Case=Nom|Number=Sing	_	_	_	_
+2	kioz-liuk-liar-ni	kioz	NOUN	_	Case=Acc|Number=Plur|VerbForm=Vnoun	_	_	_	_
+3	kabul-0	kabul	VERB	_	VerbForm=Conv	_	_	_	_
+4	et-mia.	et	AUX	_	VerbForm=Inf	_	_	_	_
+
+# sent_id = 7
+# text = Alty        kioz-liuk-liar-ni                ol        al-dy-0;
+# translation = Очков с полдюжины себе она достала;
+1	Alty	Alty	NUM	_	_	_	_	_	_
+2	kioz-liuk-liar-ni	kioz	NOUN	_	Case=Acc|Number=Plur|VerbForm=Vnoun	_	_	_	_
+3	ol	ol	NOUN	_	Case=Nom|Number=Sing	_	_	_	_
+4	al-dy-0;	al	NOUN	_	Case=Nom|Number=Sing|Person=3|Tense=Past	_	_	_	_
+
+# sent_id = 8
+# text = Bur-a-t                        kioz-liuk-liar-be                alej-        bulej;
+# translation = Вертит Очками так и сяк:
+1	Bur-a-t	Bur	NOUN	_	Case=Nom|Number=Sing|Person=3|Tense=Pres	_	_	_	_
+2	kioz-liuk-liar-be	kioz	NOUN	_	Case=Acc|Number=Plur|VerbForm=Vnoun	_	_	_	_
+3	alej-	alej-	NOUN	_	Case=Nom|Number=Sing	_	_	_	_
+4	bulej;	bulej;	NOUN	_	Case=Nom|Number=Sing	_	_	_	_
+
+# sent_id = 9
+# text = Jel-kia                kystyr-a-t,                kujruch-ka        kyjasle-j-t,
+# translation = То к темю их прижмет, то их на хвост нанижет,
+1	Jel-kia	Jel	NOUN	_	Case=Dat|Number=Sing	_	_	_	_
+2	kystyr-a-t,	kystyr	NOUN	_	Case=Nom|Number=Sing|Person=3|Tense=Pres	_	_	_	_
+3	kujruch-ka	kujruch	NOUN	_	Case=Dat|Number=Sing	_	_	_	_
+4	kyjasle-j-t,	kyjasle	NOUN	_	Case=Nom|Number=Sing|Person=3|Tense=Pres	_	_	_	_
+
+# sent_id = 10
+# text = Ara        iisk-ej-t,                ara        jal-ej-t.
+# translation = То их понюхает, то их полижет;
+1	Ara	Ara	NOUN	_	Case=Nom|Number=Sing	_	_	_	_
+2	iisk-ej-t,	iisk	NOUN	_	Case=Nom|Number=Sing|Person=3|Tense=Pres	_	_	_	_
+3	ara	ara	NOUN	_	Case=Nom|Number=Sing	_	_	_	_
+4	jal-ej-t.	jal	NOUN	_	Case=Nom|Number=Sing|Person=3|Tense=Pres	_	_	_	_
+
+# sent_id = 11
+# text = Kioz-liuk-liar                kajam                et-m-e-dliar                anar.
+# translation = Очки не действуют никак.
+1	Kioz-liuk-liar	Kioz	NOUN	_	Case=Nom|Number=Plur|VerbForm=Vnoun	_	_	_	_
+2	kajam	kajam	NOUN	_	Case=Nom|Number=Sing	_	_	_	_
+3	et-m-e-dliar	et	VERB	_	Number=Plur|Person=3|Polarity=Neg|Tense=Pres|VerbForm=Fin	_	_	_	_
+4	anar.	anar.	NOUN	_	Case=Nom|Number=Sing	_	_	_	_
+
+# sent_id = 12
+# text = «Tfu        ucz-suz-luch!»        ajt-a-t,          «bu        teli,
+# translation = «Тьфу пропасть!» говорит она: «и тот дурак,
+1	«Tfu	«Tfu	NOUN	_	Case=Nom|Number=Sing	_	_	_	_
+2	ucz-suz-luch!»	ucz	NOUN	_	Case=Abe|Number=Sing|VerbForm=Vnoun	_	_	_	_
+3	ajt-a-t,	ajt	NOUN	_	Case=Nom|Number=Sing|Person=3|Tense=Pres	_	_	_	_
+4	«bu	«bu	NOUN	_	Case=Nom|Number=Sing	_	_	_	_
+5	teli,	teli,	NOUN	_	Case=Nom|Number=Sing	_	_	_	_
+
+# sent_id = 13
+# text = Kim        tynl-ej-t                        dunja-nyn        alda-mach-lar-ny;
+# translation = Кто слушает людских всех врак:
+1	Kim	Kim	NOUN	_	Case=Nom|Number=Sing	_	_	_	_
+2	tynl-ej-t	tynl	NOUN	_	Case=Nom|Number=Sing|Person=3|Tense=Pres	_	_	_	_
+3	dunja-nyn	dunja	NOUN	_	Case=Gen|Number=Sing	_	_	_	_
+4	alda-mach-lar-ny;	alda	NOUN	_	Case=Acc|Number=Plur|VerbForm=Vnoun	_	_	_	_
+
+# sent_id = 14
+# text = Bar-y-n                kioz-liuk-liar        učiun        maja        alde-j-dlar;
+# translation = Всё про Очки лишь мне налгали;
+1	Bar-y-n	Bar	NOUN	_	Case=Acc|Number=Sing|Person=3	_	_	_	_
+2	kioz-liuk-liar	kioz	NOUN	_	Case=Nom|Number=Plur|VerbForm=Vnoun	_	_	_	_
+3	učiun	učiun	NOUN	_	Case=Nom|Number=Sing	_	_	_	_
+4	maja	maja	NOUN	_	Case=Nom|Number=Sing	_	_	_	_
+5	alde-j-dlar;	alde	NOUN	_	Case=Nom|Number=Plur|Person=3|Tense=Pres	_	_	_	_
+
+# sent_id = 15
+# text = Fajda        joch-tur-0                        alar-dan        barybe».
+# translation = А проку на́-волос нет в них».
+1	Fajda	Fajda	NOUN	_	Case=Nom|Number=Sing	_	_	_	_
+2	joch-tur-0	joch	VERB	_	Aspect=Hab|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	_	_	_	_
+3	alar-dan	alar	NOUN	_	Case=Abl|Number=Sing	_	_	_	_
+4	barybe».	barybe».	NOUN	_	Case=Nom|Number=Sing	_	_	_	_
+
+# sent_id = 16
+# text = Majmun        jaman-lan-dy-0                        da        kajhy-lych-tan
+# translation = Мартышка тут с досады и с печали
+1	Majmun	Majmun	NOUN	_	Case=Nom|Number=Sing	_	_	_	_
+2	jaman-lan-dy-0	jaman	VERB	_	Number=Sing|Person=3|Tense=Past|VerbForm=Fin|VerbType=Denom	_	_	_	_
+3	da	da	NOUN	_	Case=Nom|Number=Sing	_	_	_	_
+4	kajhy-lych-tan	kajhy	NOUN	_	Case=Abl|Number=Sing|VerbForm=Vnoun	_	_	_	_
+
+# sent_id = 17
+# text = Bulej        taš-cha                sal-dy-0                alar-ny
+# translation = О камень так хватила их,
+1	Bulej	Bulej	NOUN	_	Case=Nom|Number=Sing	_	_	_	_
+2	taš-cha	taš	NOUN	_	Case=Dat|Number=Sing	_	_	_	_
+3	sal-dy-0	sal	NOUN	_	Case=Nom|Number=Sing|Person=3|Tense=Past	_	_	_	_
+4	alar-ny	alar	NOUN	_	Case=Acc|Number=Sing	_	_	_	_
+
+# sent_id = 18
+# text = Ki                tišliam-liar-y        iltra-dy-lar.
+# translation = Что только брызги засверкали.
+1	Ki	Ki	NOUN	_	Case=Nom|Number=Sing	_	_	_	_
+2	tišliam-liar-y	tišliam	NOUN	_	Case=Nom|Number=Plur|Number=Sing|Person=3	_	_	_	_
+3	iltra-dy-lar.	iltra	NOUN	_	Case=Nom|Number=Plur|Person=3|Tense=Past	_	_	_	_
+
+# sent_id = 19
+# text = Bulej        bol-a-t                        te                dunja-da;
+# translation = К несчастью, то ж бывает у людей:
+1	Bulej	Bulej	NOUN	_	Case=Nom|Number=Sing	_	_	_	_
+2	bol-a-t	bol	NOUN	_	Case=Nom|Number=Sing|Person=3|Tense=Pres	_	_	_	_
+3	te	te	NOUN	_	Case=Nom|Focus=Yes|Number=Sing	_	_	_	_
+4	dunja-da;	dunja	NOUN	_	Case=Loc|Number=Sing	_	_	_	_
+
+# sent_id = 20
+# text = Kierakli                niersia                baha-ny        bil-m-ie-dliar                anar,
+# translation = Как ни полезна вещь, - цены не зная ей,
+1	Kierakli	Kierakli	NOUN	_	Case=Nom|Number=Sing	_	_	_	_
+2	niersia	niersia	NOUN	_	Case=Nom|Number=Sing	_	_	_	_
+3	baha-ny	baha	NOUN	_	Case=Acc|Number=Sing	_	_	_	_
+4	bil-m-ie-dliar	bil	VERB	_	Number=Plur|Person=3|Polarity=Neg|Tense=Pres|VerbForm=Fin	_	_	_	_
+5	anar,	anar,	NOUN	_	Case=Nom|Number=Sing	_	_	_	_
+
+# sent_id = 21
+# text = Tili        anyn                  učiun        sioz-iu-n                jaman-ha        ajt-a-t;
+# translation = Невежда про нее свой толк всё к худу клонит;
+1	Tili	Tili	NOUN	_	Case=Nom|Number=Sing	_	_	_	_
+2	anyn	anyn	NOUN	_	Case=Nom|Number=Sing	_	_	_	_
+3	učiun	učiun	NOUN	_	Case=Nom|Number=Sing	_	_	_	_
+4	sioz-iu-n	sioz	NOUN	_	Case=Acc|Number=Sing|Person=3	_	_	_	_
+5	jaman-ha	jaman	NOUN	_	Case=Dat|Number=Sing	_	_	_	_
+6	ajt-a-t;	ajt	NOUN	_	Case=Nom|Number=Sing|Person=3|Tense=Pres	_	_	_	_
+
+# sent_id = 22
+# text = Ėgier        syjly-rach                tili,
+# translation = А ежели невежда познатней,
+1	Ėgier	Ėgier	NOUN	_	Case=Nom|Number=Sing	_	_	_	_
+2	syjly-rach	syjly	NOUN	_	Case=Cmp|Number=Sing	_	_	_	_
+3	tili,	tili,	NOUN	_	Case=Nom|Number=Sing	_	_	_	_
+
+# sent_id = 23
+# text = Ol        anus        any                siur-a-t.
+# translation = Так он ее еще и гонит.
+1	Ol	Ol	NOUN	_	Case=Nom|Number=Sing	_	_	_	_
+2	anus	anus	NOUN	_	Case=Nom|Number=Sing	_	_	_	_
+3	any	any	NOUN	_	Case=Nom|Number=Sing	_	_	_	_
+4	siur-a-t.	siur	NOUN	_	Case=Nom|Number=Sing|Person=3|Tense=Pres	_	_	_	_

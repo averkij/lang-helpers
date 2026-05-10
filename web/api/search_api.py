@@ -6,7 +6,7 @@ API-эндпоинты поиска по корпусу.
 """
 
 import logging
-import glob as glob_module
+import json
 from pathlib import Path
 from typing import Any
 
@@ -57,6 +57,85 @@ def _normalize_features(value: Any) -> dict[str, list[str]]:
     return normalized
 
 
+def _language_aliases(language: str) -> set[str]:
+    aliases = {language} if language else set()
+    if not language:
+        return aliases
+
+    try:
+        from lib.schema_loader import list_available_schemes, load_scheme_by_name
+    except ImportError:
+        return aliases
+
+    try:
+        scheme_names = list_available_schemes()
+    except Exception:
+        return aliases
+
+    for scheme_name in scheme_names:
+        try:
+            scheme = load_scheme_by_name(scheme_name)
+        except Exception:
+            continue
+
+        scheme_code = getattr(scheme, "language_code", "")
+        if language in {scheme_name, scheme_code}:
+            aliases.add(scheme_name)
+            if scheme_code:
+                aliases.add(scheme_code)
+
+    return aliases
+
+
+def _unique_paths(paths: list[Path]) -> list[Path]:
+    seen: set[Path] = set()
+    unique = []
+    for path in paths:
+        resolved = path.resolve()
+        if resolved in seen:
+            continue
+        seen.add(resolved)
+        unique.append(path)
+    return unique
+
+
+def _flat_corpus_matches_language(filepath: Path, aliases: set[str]) -> bool:
+    if any(filepath.stem == alias or filepath.stem.startswith(f"{alias}_") for alias in aliases):
+        return True
+
+    try:
+        with open(filepath, "r", encoding="utf-8") as f:
+            corpus = json.load(f)
+    except Exception:
+        return False
+
+    language = corpus.get("language", "")
+    source = corpus.get("source", "")
+    return language in aliases or any(source == alias or source.startswith(f"{alias}_") for alias in aliases)
+
+
+def _find_corpus_files(language: str) -> list[Path]:
+    if not language:
+        return _unique_paths(list(OUTPUT_DIR.glob("*.json")) + list(OUTPUT_DIR.glob("*/*.json")))
+
+    aliases = _language_aliases(language)
+    corpus_files: list[Path] = []
+
+    for alias in aliases:
+        lang_dir = OUTPUT_DIR / alias
+        if lang_dir.is_dir():
+            corpus_files.extend(lang_dir.glob("*.json"))
+
+    if corpus_files:
+        return _unique_paths(corpus_files)
+
+    # Backward compatibility: older conversions saved flat output/*.json files.
+    return _unique_paths([
+        filepath for filepath in OUTPUT_DIR.glob("*.json")
+        if _flat_corpus_matches_language(filepath, aliases)
+    ])
+
+
 @router.post("/api/search")
 async def search(request: SearchQuery):
     """
@@ -76,13 +155,7 @@ async def search(request: SearchQuery):
             detail=f"Модуль ещё не доступен: {e}",
         )
 
-    # Find corpus files for this language in output/<language>/
-    lang_dir = OUTPUT_DIR / request.language if request.language else OUTPUT_DIR
-    corpus_files = list(lang_dir.glob("*.json")) if lang_dir.is_dir() else []
-
-    # Fallback: also check flat output/*.json for backward compatibility
-    if not corpus_files:
-        corpus_files = list(OUTPUT_DIR.glob("*.json"))
+    corpus_files = _find_corpus_files(request.language)
 
     if not corpus_files:
         raise HTTPException(

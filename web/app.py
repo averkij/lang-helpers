@@ -75,7 +75,7 @@ async def search_page(language: str):
             detail=f"Языковая схема '{language}' не найдена.",
         )
 
-    html = build_search_page(scheme, scheme.language_name)
+    html = build_search_page(scheme, scheme.language_name, language_id=language)
     return HTMLResponse(content=html)
 
 
