@@ -136,6 +136,40 @@ def _find_corpus_files(language: str) -> list[Path]:
     ])
 
 
+def _list_search_corpora() -> list[dict[str, Any]]:
+    try:
+        from lib.schema_loader import list_available_schemes, load_scheme_by_name
+    except ImportError:
+        return []
+
+    corpora: list[dict[str, Any]] = []
+    for scheme_name in list_available_schemes():
+        corpus_files = _find_corpus_files(scheme_name)
+        if not corpus_files:
+            continue
+
+        try:
+            scheme = load_scheme_by_name(scheme_name)
+        except Exception:
+            continue
+
+        corpora.append({
+            "id": scheme_name,
+            "language_code": getattr(scheme, "language_code", ""),
+            "language_name": getattr(scheme, "language_name", scheme_name),
+            "language_name_en": getattr(scheme, "language_name_en", scheme_name),
+            "files_count": len(corpus_files),
+        })
+
+    return corpora
+
+
+@router.get("/api/corpora")
+async def list_corpora():
+    """Возвращает список корпусов, доступных для поиска."""
+    return JSONResponse(content={"corpora": _list_search_corpora()})
+
+
 @router.post("/api/search")
 async def search(request: SearchQuery):
     """
