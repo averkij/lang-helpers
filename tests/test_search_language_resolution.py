@@ -60,6 +60,27 @@ class SearchLanguageResolutionTests(unittest.TestCase):
             finally:
                 search_api.OUTPUT_DIR = old_output_dir
 
+    def test_corpora_list_includes_only_searchable_schemes(self):
+        with tempfile.TemporaryDirectory() as tmpdir:
+            old_output_dir = search_api.OUTPUT_DIR
+            search_api.OUTPUT_DIR = Path(tmpdir)
+            try:
+                corpus_dir = Path(tmpdir) / "nivkh"
+                corpus_dir.mkdir()
+                (corpus_dir / "nivkh_sample.json").write_text(
+                    json.dumps({"language": "nivkh", "sentences": []}),
+                    encoding="utf-8",
+                )
+
+                corpora = search_api._list_search_corpora()
+
+                self.assertIn("nivkh", {corpus["id"] for corpus in corpora})
+                nivkh = next(corpus for corpus in corpora if corpus["id"] == "nivkh")
+                self.assertEqual(nivkh["files_count"], 1)
+                self.assertEqual(nivkh["language_code"], "niv")
+            finally:
+                search_api.OUTPUT_DIR = old_output_dir
+
 
 if __name__ == "__main__":
     unittest.main()

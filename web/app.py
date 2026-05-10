@@ -62,6 +62,12 @@ async def lexicograph_page():
     return _read_html("lexicograph.html")
 
 
+@app.get("/search", response_class=HTMLResponse)
+async def search_index_page():
+    """Страница выбора корпуса для поиска."""
+    return _read_html("search.html")
+
+
 @app.get("/search/{language}", response_class=HTMLResponse)
 async def search_page(language: str):
     """Автоматически сгенерированная страница поиска по корпусу."""

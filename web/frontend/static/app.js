@@ -601,6 +601,50 @@ function loadAvailableLanguages() {
         });
 }
 
+/**
+ * Загружает список корпусов, доступных для поиска.
+ */
+function loadAvailableCorpora() {
+    var container = document.getElementById('corporaList');
+    if (!container) return;
+
+    fetch('/api/corpora')
+        .then(function (r) { return r.json(); })
+        .then(function (data) {
+            container.innerHTML = '';
+            if (data.corpora && data.corpora.length > 0) {
+                data.corpora.forEach(function (corpus) {
+                    var a = document.createElement('a');
+                    a.href = '/search/' + corpus.id;
+                    a.className = 'corpus-card';
+
+                    var title = document.createElement('h3');
+                    title.textContent = corpus.language_name || corpus.id;
+
+                    var meta = document.createElement('p');
+                    var parts = [];
+                    if (corpus.language_name_en && corpus.language_name_en !== corpus.language_name) {
+                        parts.push(corpus.language_name_en);
+                    }
+                    if (corpus.language_code) {
+                        parts.push(corpus.language_code);
+                    }
+                    parts.push('Файлов: ' + (corpus.files_count || 0));
+                    meta.textContent = parts.join(' · ');
+
+                    a.appendChild(title);
+                    a.appendChild(meta);
+                    container.appendChild(a);
+                });
+            } else {
+                container.innerHTML = '<p>Корпуса для поиска не найдены. Сначала конвертируйте тексты через Транслятор.</p>';
+            }
+        })
+        .catch(function () {
+            container.innerHTML = '<p>Не удалось загрузить список корпусов.</p>';
+        });
+}
+
 
 /* === Общие утилиты === */
 
