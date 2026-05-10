@@ -143,7 +143,11 @@ def _render_pos_checkboxes(pos_tags: list[str]) -> str:
     )
 
 
-def build_search_page(scheme: LanguageScheme, language_name: str) -> str:
+def build_search_page(
+    scheme: LanguageScheme,
+    language_name: str,
+    language_id: str | None = None,
+) -> str:
     """
     Генерирует полную HTML-страницу поиска по корпусу для данного языка.
 
@@ -168,7 +172,7 @@ def build_search_page(scheme: LanguageScheme, language_name: str) -> str:
     # POS-чекбоксы
     pos_html = _render_pos_checkboxes(pos_tags)
 
-    language_code = scheme.language_code or language_name.lower()
+    language_code = language_id or scheme.language_code or language_name.lower()
 
     return f"""<!DOCTYPE html>
 <html lang="ru">

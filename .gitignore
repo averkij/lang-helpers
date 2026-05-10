@@ -2,3 +2,4 @@ lib/__pycache__/
 web/__pycache__/
 web/api/__pycache__/
 schemas/__pycache__/
+tests/__pycache__/

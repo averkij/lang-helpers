@@ -1,0 +1,1390 @@
+{
+  "sentences": [
+    {
+      "id": "1",
+      "text": "MAJMUN        DA        KIOZ-LIUK-LIAR",
+      "translation": "Мартышка и очки",
+      "tokens": [
+        {
+          "itoken": "1",
+          "token": "MAJMUN",
+          "lemma": "MAJMUN",
+          "pos": "NOUN",
+          "tagsets": [
+            [
+              "Case=Nom",
+              "Number=Sing"
+            ]
+          ],
+          "glosses": "_"
+        },
+        {
+          "itoken": "2",
+          "token": "DA",
+          "lemma": "DA",
+          "pos": "NOUN",
+          "tagsets": [
+            [
+              "Case=Nom",
+              "Number=Sing"
+            ]
+          ],
+          "glosses": "_"
+        },
+        {
+          "itoken": "3",
+          "token": "KIOZ-LIUK-LIAR",
+          "lemma": "KIOZ",
+          "pos": "NOUN",
+          "tagsets": [
+            [
+              "Case=Nom",
+              "Number=Plur",
+              "VerbForm=Vnoun"
+            ]
+          ],
+          "glosses": "NMN.PL"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "text": "Kartlych-ka        Majmun        sokur-lan-dy-0,",
+      "translation": "Мартышка к старости слаба глазами стала;",
+      "tokens": [
+        {
+          "itoken": "1",
+          "token": "Kartlych-ka",
+          "lemma": "Kartlych",
+          "pos": "NOUN",
+          "tagsets": [
+            [
+              "Case=Dat",
+              "Number=Sing"
+            ]
+          ],
+          "glosses": "DAT"
+        },
+        {
+          "itoken": "2",
+          "token": "Majmun",
+          "lemma": "Majmun",
+          "pos": "NOUN",
+          "tagsets": [
+            [
+              "Case=Nom",
+              "Number=Sing"
+            ]
+          ],
+          "glosses": "_"
+        },
+        {
+          "itoken": "3",
+          "token": "sokur-lan-dy-0,",
+          "lemma": "sokur",
+          "pos": "VERB",
+          "tagsets": [
+            [
+              "Number=Sing",
+              "Person=3",
+              "Tense=Past",
+              "VerbForm=Fin",
+              "VerbType=Denom"
+            ]
+          ],
+          "glosses": "VRB.PST.3.SG"
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "text": "Dunja-dan        ol        tuj-du-0,",
+      "translation": "А у людей она слыхала,",
+      "tokens": [
+        {
+          "itoken": "1",
+          "token": "Dunja-dan",
+          "lemma": "Dunja",
+          "pos": "NOUN",
+          "tagsets": [
+            [
+              "Case=Abl",
+              "Number=Sing"
+            ]
+          ],
+          "glosses": "ABL"
+        },
+        {
+          "itoken": "2",
+          "token": "ol",
+          "lemma": "ol",
+          "pos": "NOUN",
+          "tagsets": [
+            [
+              "Case=Nom",
+              "Number=Sing"
+            ]
+          ],
+          "glosses": "_"
+        },
+        {
+          "itoken": "3",
+          "token": "tuj-du-0,",
+          "lemma": "tuj",
+          "pos": "NOUN",
+          "tagsets": [
+            [
+              "Case=Nom",
+              "Number=Sing",
+              "Person=3",
+              "Tense=Past"
+            ]
+          ],
+          "glosses": "PST.3.SG"
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "text": "Ki        bu        chorluch        tiuviul",
+      "translation": "Что это зло еще не так большой руки:",
+      "tokens": [
+        {
+          "itoken": "1",
+          "token": "Ki",
+          "lemma": "Ki",
+          "pos": "NOUN",
+          "tagsets": [
+            [
+              "Case=Nom",
+              "Number=Sing"
+            ]
+          ],
+          "glosses": "_"
+        },
+        {
+          "itoken": "2",
+          "token": "bu",
+          "lemma": "bu",
+          "pos": "NOUN",
+          "tagsets": [
+            [
+              "Case=Nom",
+              "Number=Sing"
+            ]
+          ],
+          "glosses": "_"
+        },
+        {
+          "itoken": "3",
+          "token": "chorluch",
+          "lemma": "chorluch",
+          "pos": "NOUN",
+          "tagsets": [
+            [
+              "Case=Nom",
+              "Number=Sing"
+            ]
+          ],
+          "glosses": "_"
+        },
+        {
+          "itoken": "4",
+          "token": "tiuviul",
+          "lemma": "tiuviul",
+          "pos": "VERB",
+          "tagsets": [
+            [
+              "Polarity=Neg",
+              "Tense=Pres",
+              "VerbForm=Fin"
+            ]
+          ],
+          "glosses": "NEG"
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "text": "ullu                barybe;",
+      "translation": "Что это зло еще не так большой руки:",
+      "tokens": [
+        {
+          "itoken": "1",
+          "token": "ullu",
+          "lemma": "ullu",
+          "pos": "NOUN",
+          "tagsets": [
+            [
+              "Case=Nom",
+              "Number=Sing"
+            ]
+          ],
+          "glosses": "_"
+        },
+        {
+          "itoken": "2",
+          "token": "barybe;",
+          "lemma": "barybe;",
+          "pos": "NOUN",
+          "tagsets": [
+            [
+              "Case=Nom",
+              "Number=Sing"
+            ]
+          ],
+          "glosses": "_"
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "text": "Ėgier        kioz-liuk-liar-ni                kabul-0                et-mia.",
+      "translation": "Лишь стоит завести Очки.",
+      "tokens": [
+        {
+          "itoken": "1",
+          "token": "Ėgier",
+          "lemma": "Ėgier",
+          "pos": "NOUN",
+          "tagsets": [
+            [
+              "Case=Nom",
+              "Number=Sing"
+            ]
+          ],
+          "glosses": "_"
+        },
+        {
+          "itoken": "2",
+          "token": "kioz-liuk-liar-ni",
+          "lemma": "kioz",
+          "pos": "NOUN",
+          "tagsets": [
+            [
+              "Case=Acc",
+              "Number=Plur",
+              "VerbForm=Vnoun"
+            ]
+          ],
+          "glosses": "NMN.PL.ACC"
+        },
+        {
+          "itoken": "3",
+          "token": "kabul-0",
+          "lemma": "kabul",
+          "pos": "VERB",
+          "tagsets": [
+            [
+              "VerbForm=Conv"
+            ]
+          ],
+          "glosses": "CONV"
+        },
+        {
+          "itoken": "4",
+          "token": "et-mia.",
+          "lemma": "et",
+          "pos": "AUX",
+          "tagsets": [
+            [
+              "VerbForm=Inf"
+            ]
+          ],
+          "glosses": "AUX.INF"
+        }
+      ]
+    },
+    {
+      "id": "7",
+      "text": "Alty        kioz-liuk-liar-ni                ol        al-dy-0;",
+      "translation": "Очков с полдюжины себе она достала;",
+      "tokens": [
+        {
+          "itoken": "1",
+          "token": "Alty",
+          "lemma": "Alty",
+          "pos": "NUM",
+          "tagsets": [],
+          "glosses": "_"
+        },
+        {
+          "itoken": "2",
+          "token": "kioz-liuk-liar-ni",
+          "lemma": "kioz",
+          "pos": "NOUN",
+          "tagsets": [
+            [
+              "Case=Acc",
+              "Number=Plur",
+              "VerbForm=Vnoun"
+            ]
+          ],
+          "glosses": "NMN.PL.ACC"
+        },
+        {
+          "itoken": "3",
+          "token": "ol",
+          "lemma": "ol",
+          "pos": "NOUN",
+          "tagsets": [
+            [
+              "Case=Nom",
+              "Number=Sing"
+            ]
+          ],
+          "glosses": "_"
+        },
+        {
+          "itoken": "4",
+          "token": "al-dy-0;",
+          "lemma": "al",
+          "pos": "NOUN",
+          "tagsets": [
+            [
+              "Case=Nom",
+              "Number=Sing",
+              "Person=3",
+              "Tense=Past"
+            ]
+          ],
+          "glosses": "PST.3.SG"
+        }
+      ]
+    },
+    {
+      "id": "8",
+      "text": "Bur-a-t                        kioz-liuk-liar-be                alej-        bulej;",
+      "translation": "Вертит Очками так и сяк:",
+      "tokens": [
+        {
+          "itoken": "1",
+          "token": "Bur-a-t",
+          "lemma": "Bur",
+          "pos": "NOUN",
+          "tagsets": [
+            [
+              "Case=Nom",
+              "Number=Sing",
+              "Person=3",
+              "Tense=Pres"
+            ]
+          ],
+          "glosses": "PRS.3.SG"
+        },
+        {
+          "itoken": "2",
+          "token": "kioz-liuk-liar-be",
+          "lemma": "kioz",
+          "pos": "NOUN",
+          "tagsets": [
+            [
+              "Case=Acc",
+              "Number=Plur",
+              "VerbForm=Vnoun"
+            ]
+          ],
+          "glosses": "NMN.PL.ACC"
+        },
+        {
+          "itoken": "3",
+          "token": "alej-",
+          "lemma": "alej-",
+          "pos": "NOUN",
+          "tagsets": [
+            [
+              "Case=Nom",
+              "Number=Sing"
+            ]
+          ],
+          "glosses": "_"
+        },
+        {
+          "itoken": "4",
+          "token": "bulej;",
+          "lemma": "bulej;",
+          "pos": "NOUN",
+          "tagsets": [
+            [
+              "Case=Nom",
+              "Number=Sing"
+            ]
+          ],
+          "glosses": "_"
+        }
+      ]
+    },
+    {
+      "id": "9",
+      "text": "Jel-kia                kystyr-a-t,                kujruch-ka        kyjasle-j-t,",
+      "translation": "То к темю их прижмет, то их на хвост нанижет,",
+      "tokens": [
+        {
+          "itoken": "1",
+          "token": "Jel-kia",
+          "lemma": "Jel",
+          "pos": "NOUN",
+          "tagsets": [
+            [
+              "Case=Dat",
+              "Number=Sing"
+            ]
+          ],
+          "glosses": "DAT"
+        },
+        {
+          "itoken": "2",
+          "token": "kystyr-a-t,",
+          "lemma": "kystyr",
+          "pos": "NOUN",
+          "tagsets": [
+            [
+              "Case=Nom",
+              "Number=Sing",
+              "Person=3",
+              "Tense=Pres"
+            ]
+          ],
+          "glosses": "PRS.3.SG"
+        },
+        {
+          "itoken": "3",
+          "token": "kujruch-ka",
+          "lemma": "kujruch",
+          "pos": "NOUN",
+          "tagsets": [
+            [
+              "Case=Dat",
+              "Number=Sing"
+            ]
+          ],
+          "glosses": "DAT"
+        },
+        {
+          "itoken": "4",
+          "token": "kyjasle-j-t,",
+          "lemma": "kyjasle",
+          "pos": "NOUN",
+          "tagsets": [
+            [
+              "Case=Nom",
+              "Number=Sing",
+              "Person=3",
+              "Tense=Pres"
+            ]
+          ],
+          "glosses": "PRS.3.SG"
+        }
+      ]
+    },
+    {
+      "id": "10",
+      "text": "Ara        iisk-ej-t,                ara        jal-ej-t.",
+      "translation": "То их понюхает, то их полижет;",
+      "tokens": [
+        {
+          "itoken": "1",
+          "token": "Ara",
+          "lemma": "Ara",
+          "pos": "NOUN",
+          "tagsets": [
+            [
+              "Case=Nom",
+              "Number=Sing"
+            ]
+          ],
+          "glosses": "_"
+        },
+        {
+          "itoken": "2",
+          "token": "iisk-ej-t,",
+          "lemma": "iisk",
+          "pos": "NOUN",
+          "tagsets": [
+            [
+              "Case=Nom",
+              "Number=Sing",
+              "Person=3",
+              "Tense=Pres"
+            ]
+          ],
+          "glosses": "PRS.3.SG"
+        },
+        {
+          "itoken": "3",
+          "token": "ara",
+          "lemma": "ara",
+          "pos": "NOUN",
+          "tagsets": [
+            [
+              "Case=Nom",
+              "Number=Sing"
+            ]
+          ],
+          "glosses": "_"
+        },
+        {
+          "itoken": "4",
+          "token": "jal-ej-t.",
+          "lemma": "jal",
+          "pos": "NOUN",
+          "tagsets": [
+            [
+              "Case=Nom",
+              "Number=Sing",
+              "Person=3",
+              "Tense=Pres"
+            ]
+          ],
+          "glosses": "PRS.3.SG"
+        }
+      ]
+    },
+    {
+      "id": "11",
+      "text": "Kioz-liuk-liar                kajam                et-m-e-dliar                anar.",
+      "translation": "Очки не действуют никак.",
+      "tokens": [
+        {
+          "itoken": "1",
+          "token": "Kioz-liuk-liar",
+          "lemma": "Kioz",
+          "pos": "NOUN",
+          "tagsets": [
+            [
+              "Case=Nom",
+              "Number=Plur",
+              "VerbForm=Vnoun"
+            ]
+          ],
+          "glosses": "NMN.PL"
+        },
+        {
+          "itoken": "2",
+          "token": "kajam",
+          "lemma": "kajam",
+          "pos": "NOUN",
+          "tagsets": [
+            [
+              "Case=Nom",
+              "Number=Sing"
+            ]
+          ],
+          "glosses": "_"
+        },
+        {
+          "itoken": "3",
+          "token": "et-m-e-dliar",
+          "lemma": "et",
+          "pos": "VERB",
+          "tagsets": [
+            [
+              "Number=Plur",
+              "Person=3",
+              "Polarity=Neg",
+              "Tense=Pres",
+              "VerbForm=Fin"
+            ]
+          ],
+          "glosses": "NEG.PRS.3.PL"
+        },
+        {
+          "itoken": "4",
+          "token": "anar.",
+          "lemma": "anar.",
+          "pos": "NOUN",
+          "tagsets": [
+            [
+              "Case=Nom",
+              "Number=Sing"
+            ]
+          ],
+          "glosses": "_"
+        }
+      ]
+    },
+    {
+      "id": "12",
+      "text": "«Tfu        ucz-suz-luch!»        ajt-a-t,          «bu        teli,",
+      "translation": "«Тьфу пропасть!» говорит она: «и тот дурак,",
+      "tokens": [
+        {
+          "itoken": "1",
+          "token": "«Tfu",
+          "lemma": "«Tfu",
+          "pos": "NOUN",
+          "tagsets": [
+            [
+              "Case=Nom",
+              "Number=Sing"
+            ]
+          ],
+          "glosses": "_"
+        },
+        {
+          "itoken": "2",
+          "token": "ucz-suz-luch!»",
+          "lemma": "ucz",
+          "pos": "NOUN",
+          "tagsets": [
+            [
+              "Case=Abe",
+              "Number=Sing",
+              "VerbForm=Vnoun"
+            ]
+          ],
+          "glosses": "ABE.NMN"
+        },
+        {
+          "itoken": "3",
+          "token": "ajt-a-t,",
+          "lemma": "ajt",
+          "pos": "NOUN",
+          "tagsets": [
+            [
+              "Case=Nom",
+              "Number=Sing",
+              "Person=3",
+              "Tense=Pres"
+            ]
+          ],
+          "glosses": "PRS.3.SG"
+        },
+        {
+          "itoken": "4",
+          "token": "«bu",
+          "lemma": "«bu",
+          "pos": "NOUN",
+          "tagsets": [
+            [
+              "Case=Nom",
+              "Number=Sing"
+            ]
+          ],
+          "glosses": "_"
+        },
+        {
+          "itoken": "5",
+          "token": "teli,",
+          "lemma": "teli,",
+          "pos": "NOUN",
+          "tagsets": [
+            [
+              "Case=Nom",
+              "Number=Sing"
+            ]
+          ],
+          "glosses": "_"
+        }
+      ]
+    },
+    {
+      "id": "13",
+      "text": "Kim        tynl-ej-t                        dunja-nyn        alda-mach-lar-ny;",
+      "translation": "Кто слушает людских всех врак:",
+      "tokens": [
+        {
+          "itoken": "1",
+          "token": "Kim",
+          "lemma": "Kim",
+          "pos": "NOUN",
+          "tagsets": [
+            [
+              "Case=Nom",
+              "Number=Sing"
+            ]
+          ],
+          "glosses": "_"
+        },
+        {
+          "itoken": "2",
+          "token": "tynl-ej-t",
+          "lemma": "tynl",
+          "pos": "NOUN",
+          "tagsets": [
+            [
+              "Case=Nom",
+              "Number=Sing",
+              "Person=3",
+              "Tense=Pres"
+            ]
+          ],
+          "glosses": "PRS.3.SG"
+        },
+        {
+          "itoken": "3",
+          "token": "dunja-nyn",
+          "lemma": "dunja",
+          "pos": "NOUN",
+          "tagsets": [
+            [
+              "Case=Gen",
+              "Number=Sing"
+            ]
+          ],
+          "glosses": "GEN"
+        },
+        {
+          "itoken": "4",
+          "token": "alda-mach-lar-ny;",
+          "lemma": "alda",
+          "pos": "NOUN",
+          "tagsets": [
+            [
+              "Case=Acc",
+              "Number=Plur",
+              "VerbForm=Vnoun"
+            ]
+          ],
+          "glosses": "NMN.PL.ACC"
+        }
+      ]
+    },
+    {
+      "id": "14",
+      "text": "Bar-y-n                kioz-liuk-liar        učiun        maja        alde-j-dlar;",
+      "translation": "Всё про Очки лишь мне налгали;",
+      "tokens": [
+        {
+          "itoken": "1",
+          "token": "Bar-y-n",
+          "lemma": "Bar",
+          "pos": "NOUN",
+          "tagsets": [
+            [
+              "Case=Acc",
+              "Number=Sing",
+              "Person=3"
+            ]
+          ],
+          "glosses": "3.SG.ACC"
+        },
+        {
+          "itoken": "2",
+          "token": "kioz-liuk-liar",
+          "lemma": "kioz",
+          "pos": "NOUN",
+          "tagsets": [
+            [
+              "Case=Nom",
+              "Number=Plur",
+              "VerbForm=Vnoun"
+            ]
+          ],
+          "glosses": "NMN.PL"
+        },
+        {
+          "itoken": "3",
+          "token": "učiun",
+          "lemma": "učiun",
+          "pos": "NOUN",
+          "tagsets": [
+            [
+              "Case=Nom",
+              "Number=Sing"
+            ]
+          ],
+          "glosses": "_"
+        },
+        {
+          "itoken": "4",
+          "token": "maja",
+          "lemma": "maja",
+          "pos": "NOUN",
+          "tagsets": [
+            [
+              "Case=Nom",
+              "Number=Sing"
+            ]
+          ],
+          "glosses": "_"
+        },
+        {
+          "itoken": "5",
+          "token": "alde-j-dlar;",
+          "lemma": "alde",
+          "pos": "NOUN",
+          "tagsets": [
+            [
+              "Case=Nom",
+              "Number=Plur",
+              "Person=3",
+              "Tense=Pres"
+            ]
+          ],
+          "glosses": "PRS.3.PL"
+        }
+      ]
+    },
+    {
+      "id": "15",
+      "text": "Fajda        joch-tur-0                        alar-dan        barybe».",
+      "translation": "А проку на́-волос нет в них».",
+      "tokens": [
+        {
+          "itoken": "1",
+          "token": "Fajda",
+          "lemma": "Fajda",
+          "pos": "NOUN",
+          "tagsets": [
+            [
+              "Case=Nom",
+              "Number=Sing"
+            ]
+          ],
+          "glosses": "_"
+        },
+        {
+          "itoken": "2",
+          "token": "joch-tur-0",
+          "lemma": "joch",
+          "pos": "VERB",
+          "tagsets": [
+            [
+              "Aspect=Hab",
+              "Number=Sing",
+              "Person=3",
+              "Tense=Pres",
+              "VerbForm=Fin"
+            ]
+          ],
+          "glosses": "HAB.3.SG"
+        },
+        {
+          "itoken": "3",
+          "token": "alar-dan",
+          "lemma": "alar",
+          "pos": "NOUN",
+          "tagsets": [
+            [
+              "Case=Abl",
+              "Number=Sing"
+            ]
+          ],
+          "glosses": "ABL"
+        },
+        {
+          "itoken": "4",
+          "token": "barybe».",
+          "lemma": "barybe».",
+          "pos": "NOUN",
+          "tagsets": [
+            [
+              "Case=Nom",
+              "Number=Sing"
+            ]
+          ],
+          "glosses": "_"
+        }
+      ]
+    },
+    {
+      "id": "16",
+      "text": "Majmun        jaman-lan-dy-0                        da        kajhy-lych-tan",
+      "translation": "Мартышка тут с досады и с печали",
+      "tokens": [
+        {
+          "itoken": "1",
+          "token": "Majmun",
+          "lemma": "Majmun",
+          "pos": "NOUN",
+          "tagsets": [
+            [
+              "Case=Nom",
+              "Number=Sing"
+            ]
+          ],
+          "glosses": "_"
+        },
+        {
+          "itoken": "2",
+          "token": "jaman-lan-dy-0",
+          "lemma": "jaman",
+          "pos": "VERB",
+          "tagsets": [
+            [
+              "Number=Sing",
+              "Person=3",
+              "Tense=Past",
+              "VerbForm=Fin",
+              "VerbType=Denom"
+            ]
+          ],
+          "glosses": "VRB.PST.3.SG"
+        },
+        {
+          "itoken": "3",
+          "token": "da",
+          "lemma": "da",
+          "pos": "NOUN",
+          "tagsets": [
+            [
+              "Case=Nom",
+              "Number=Sing"
+            ]
+          ],
+          "glosses": "_"
+        },
+        {
+          "itoken": "4",
+          "token": "kajhy-lych-tan",
+          "lemma": "kajhy",
+          "pos": "NOUN",
+          "tagsets": [
+            [
+              "Case=Abl",
+              "Number=Sing",
+              "VerbForm=Vnoun"
+            ]
+          ],
+          "glosses": "NMN.ABL"
+        }
+      ]
+    },
+    {
+      "id": "17",
+      "text": "Bulej        taš-cha                sal-dy-0                alar-ny",
+      "translation": "О камень так хватила их,",
+      "tokens": [
+        {
+          "itoken": "1",
+          "token": "Bulej",
+          "lemma": "Bulej",
+          "pos": "NOUN",
+          "tagsets": [
+            [
+              "Case=Nom",
+              "Number=Sing"
+            ]
+          ],
+          "glosses": "_"
+        },
+        {
+          "itoken": "2",
+          "token": "taš-cha",
+          "lemma": "taš",
+          "pos": "NOUN",
+          "tagsets": [
+            [
+              "Case=Dat",
+              "Number=Sing"
+            ]
+          ],
+          "glosses": "DAT"
+        },
+        {
+          "itoken": "3",
+          "token": "sal-dy-0",
+          "lemma": "sal",
+          "pos": "NOUN",
+          "tagsets": [
+            [
+              "Case=Nom",
+              "Number=Sing",
+              "Person=3",
+              "Tense=Past"
+            ]
+          ],
+          "glosses": "PST.3.SG"
+        },
+        {
+          "itoken": "4",
+          "token": "alar-ny",
+          "lemma": "alar",
+          "pos": "NOUN",
+          "tagsets": [
+            [
+              "Case=Acc",
+              "Number=Sing"
+            ]
+          ],
+          "glosses": "ACC"
+        }
+      ]
+    },
+    {
+      "id": "18",
+      "text": "Ki                tišliam-liar-y        iltra-dy-lar.",
+      "translation": "Что только брызги засверкали.",
+      "tokens": [
+        {
+          "itoken": "1",
+          "token": "Ki",
+          "lemma": "Ki",
+          "pos": "NOUN",
+          "tagsets": [
+            [
+              "Case=Nom",
+              "Number=Sing"
+            ]
+          ],
+          "glosses": "_"
+        },
+        {
+          "itoken": "2",
+          "token": "tišliam-liar-y",
+          "lemma": "tišliam",
+          "pos": "NOUN",
+          "tagsets": [
+            [
+              "Case=Nom",
+              "Number=Plur",
+              "Number=Sing",
+              "Person=3"
+            ]
+          ],
+          "glosses": "PL.3.SG"
+        },
+        {
+          "itoken": "3",
+          "token": "iltra-dy-lar.",
+          "lemma": "iltra",
+          "pos": "NOUN",
+          "tagsets": [
+            [
+              "Case=Nom",
+              "Number=Plur",
+              "Person=3",
+              "Tense=Past"
+            ]
+          ],
+          "glosses": "PST.3.PL"
+        }
+      ]
+    },
+    {
+      "id": "19",
+      "text": "Bulej        bol-a-t                        te                dunja-da;",
+      "translation": "К несчастью, то ж бывает у людей:",
+      "tokens": [
+        {
+          "itoken": "1",
+          "token": "Bulej",
+          "lemma": "Bulej",
+          "pos": "NOUN",
+          "tagsets": [
+            [
+              "Case=Nom",
+              "Number=Sing"
+            ]
+          ],
+          "glosses": "_"
+        },
+        {
+          "itoken": "2",
+          "token": "bol-a-t",
+          "lemma": "bol",
+          "pos": "NOUN",
+          "tagsets": [
+            [
+              "Case=Nom",
+              "Number=Sing",
+              "Person=3",
+              "Tense=Pres"
+            ]
+          ],
+          "glosses": "PRS.3.SG"
+        },
+        {
+          "itoken": "3",
+          "token": "te",
+          "lemma": "te",
+          "pos": "NOUN",
+          "tagsets": [
+            [
+              "Case=Nom",
+              "Focus=Yes",
+              "Number=Sing"
+            ]
+          ],
+          "glosses": "FOC"
+        },
+        {
+          "itoken": "4",
+          "token": "dunja-da;",
+          "lemma": "dunja",
+          "pos": "NOUN",
+          "tagsets": [
+            [
+              "Case=Loc",
+              "Number=Sing"
+            ]
+          ],
+          "glosses": "LOC"
+        }
+      ]
+    },
+    {
+      "id": "20",
+      "text": "Kierakli                niersia                baha-ny        bil-m-ie-dliar                anar,",
+      "translation": "Как ни полезна вещь, - цены не зная ей,",
+      "tokens": [
+        {
+          "itoken": "1",
+          "token": "Kierakli",
+          "lemma": "Kierakli",
+          "pos": "NOUN",
+          "tagsets": [
+            [
+              "Case=Nom",
+              "Number=Sing"
+            ]
+          ],
+          "glosses": "_"
+        },
+        {
+          "itoken": "2",
+          "token": "niersia",
+          "lemma": "niersia",
+          "pos": "NOUN",
+          "tagsets": [
+            [
+              "Case=Nom",
+              "Number=Sing"
+            ]
+          ],
+          "glosses": "_"
+        },
+        {
+          "itoken": "3",
+          "token": "baha-ny",
+          "lemma": "baha",
+          "pos": "NOUN",
+          "tagsets": [
+            [
+              "Case=Acc",
+              "Number=Sing"
+            ]
+          ],
+          "glosses": "ACC"
+        },
+        {
+          "itoken": "4",
+          "token": "bil-m-ie-dliar",
+          "lemma": "bil",
+          "pos": "VERB",
+          "tagsets": [
+            [
+              "Number=Plur",
+              "Person=3",
+              "Polarity=Neg",
+              "Tense=Pres",
+              "VerbForm=Fin"
+            ]
+          ],
+          "glosses": "NEG.PRS.3.PL"
+        },
+        {
+          "itoken": "5",
+          "token": "anar,",
+          "lemma": "anar,",
+          "pos": "NOUN",
+          "tagsets": [
+            [
+              "Case=Nom",
+              "Number=Sing"
+            ]
+          ],
+          "glosses": "_"
+        }
+      ]
+    },
+    {
+      "id": "21",
+      "text": "Tili        anyn                  učiun        sioz-iu-n                jaman-ha        ajt-a-t;",
+      "translation": "Невежда про нее свой толк всё к худу клонит;",
+      "tokens": [
+        {
+          "itoken": "1",
+          "token": "Tili",
+          "lemma": "Tili",
+          "pos": "NOUN",
+          "tagsets": [
+            [
+              "Case=Nom",
+              "Number=Sing"
+            ]
+          ],
+          "glosses": "_"
+        },
+        {
+          "itoken": "2",
+          "token": "anyn",
+          "lemma": "anyn",
+          "pos": "NOUN",
+          "tagsets": [
+            [
+              "Case=Nom",
+              "Number=Sing"
+            ]
+          ],
+          "glosses": "_"
+        },
+        {
+          "itoken": "3",
+          "token": "učiun",
+          "lemma": "učiun",
+          "pos": "NOUN",
+          "tagsets": [
+            [
+              "Case=Nom",
+              "Number=Sing"
+            ]
+          ],
+          "glosses": "_"
+        },
+        {
+          "itoken": "4",
+          "token": "sioz-iu-n",
+          "lemma": "sioz",
+          "pos": "NOUN",
+          "tagsets": [
+            [
+              "Case=Acc",
+              "Number=Sing",
+              "Person=3"
+            ]
+          ],
+          "glosses": "3.SG.ACC"
+        },
+        {
+          "itoken": "5",
+          "token": "jaman-ha",
+          "lemma": "jaman",
+          "pos": "NOUN",
+          "tagsets": [
+            [
+              "Case=Dat",
+              "Number=Sing"
+            ]
+          ],
+          "glosses": "DAT"
+        },
+        {
+          "itoken": "6",
+          "token": "ajt-a-t;",
+          "lemma": "ajt",
+          "pos": "NOUN",
+          "tagsets": [
+            [
+              "Case=Nom",
+              "Number=Sing",
+              "Person=3",
+              "Tense=Pres"
+            ]
+          ],
+          "glosses": "PRS.3.SG"
+        }
+      ]
+    },
+    {
+      "id": "22",
+      "text": "Ėgier        syjly-rach                tili,",
+      "translation": "А ежели невежда познатней,",
+      "tokens": [
+        {
+          "itoken": "1",
+          "token": "Ėgier",
+          "lemma": "Ėgier",
+          "pos": "NOUN",
+          "tagsets": [
+            [
+              "Case=Nom",
+              "Number=Sing"
+            ]
+          ],
+          "glosses": "_"
+        },
+        {
+          "itoken": "2",
+          "token": "syjly-rach",
+          "lemma": "syjly",
+          "pos": "NOUN",
+          "tagsets": [
+            [
+              "Case=Cmp",
+              "Number=Sing"
+            ]
+          ],
+          "glosses": "COMP"
+        },
+        {
+          "itoken": "3",
+          "token": "tili,",
+          "lemma": "tili,",
+          "pos": "NOUN",
+          "tagsets": [
+            [
+              "Case=Nom",
+              "Number=Sing"
+            ]
+          ],
+          "glosses": "_"
+        }
+      ]
+    },
+    {
+      "id": "23",
+      "text": "Ol        anus        any                siur-a-t.",
+      "translation": "Так он ее еще и гонит.",
+      "tokens": [
+        {
+          "itoken": "1",
+          "token": "Ol",
+          "lemma": "Ol",
+          "pos": "NOUN",
+          "tagsets": [
+            [
+              "Case=Nom",
+              "Number=Sing"
+            ]
+          ],
+          "glosses": "_"
+        },
+        {
+          "itoken": "2",
+          "token": "anus",
+          "lemma": "anus",
+          "pos": "NOUN",
+          "tagsets": [
+            [
+              "Case=Nom",
+              "Number=Sing"
+            ]
+          ],
+          "glosses": "_"
+        },
+        {
+          "itoken": "3",
+          "token": "any",
+          "lemma": "any",
+          "pos": "NOUN",
+          "tagsets": [
+            [
+              "Case=Nom",
+              "Number=Sing"
+            ]
+          ],
+          "glosses": "_"
+        },
+        {
+          "itoken": "4",
+          "token": "siur-a-t.",
+          "lemma": "siur",
+          "pos": "NOUN",
+          "tagsets": [
+            [
+              "Case=Nom",
+              "Number=Sing",
+              "Person=3",
+              "Tense=Pres"
+            ]
+          ],
+          "glosses": "PRS.3.SG"
+        }
+      ]
+    }
+  ],
+  "source": "karaim_sample",
+  "language": "kdr"
+}

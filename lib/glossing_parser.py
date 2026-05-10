@@ -60,6 +60,7 @@ _MORPHEME_SPLIT_RE = re.compile(r'(?<=.)[-=](?=.)')
 
 # Регулярное выражение для строки с номером предложения
 _SENTENCE_ID_RE = re.compile(r'^(\d+)\s*>\s*(.*)')
+_NUMBERED_LINE_RE = re.compile(r'^(\d+(?:_\d+)?)\s*([><=])\s*(.*)$')
 
 
 def _is_grammatical_gloss(gloss: str) -> bool:
@@ -111,6 +112,45 @@ def _parse_word(segmented_form: str, gloss_form: str, sentence_id: str, word_idx
     return Word(form=segmented_form, morphemes=morphemes)
 
 
+def _strip_translation(text: str) -> str:
+    return text.strip().strip("'\"").strip()
+
+
+def _build_sentence(
+    sentence_id: str,
+    original_text: str,
+    segmented_line: str,
+    gloss_line: str,
+    translation: str,
+) -> Sentence:
+    seg_words = segmented_line.split()
+    gloss_words = gloss_line.split()
+
+    if len(seg_words) != len(gloss_words):
+        logger.warning(
+            f"Предложение {sentence_id}: несовпадение числа слов "
+            f"в сегментации ({len(seg_words)}) и глоссах ({len(gloss_words)}). "
+            f"Сегментация: {segmented_line!r}, Глоссы: {gloss_line!r}"
+        )
+        # Обрабатываем сколько можем
+        min_len = min(len(seg_words), len(gloss_words))
+        seg_words = seg_words[:min_len]
+        gloss_words = gloss_words[:min_len]
+
+    words = []
+    for i, (seg, gls) in enumerate(zip(seg_words, gloss_words)):
+        word = _parse_word(seg, gls, sentence_id, i)
+        if word is not None:
+            words.append(word)
+
+    return Sentence(
+        id=sentence_id,
+        original=original_text,
+        words=words,
+        translation=translation,
+    )
+
+
 def _parse_sentence_block(lines: list[str]) -> Sentence | None:
     """
     Разбирает блок строк, соответствующий одному предложению.
@@ -139,37 +179,112 @@ def _parse_sentence_block(lines: list[str]) -> Sentence | None:
     gloss_line = lines[2].strip()
 
     # Строка 4: свободный перевод (в кавычках)
-    translation_line = lines[3].strip()
-    # Убираем окружающие кавычки
-    translation = translation_line.strip("'\"").strip()
+    translation = _strip_translation(lines[3])
 
-    # Разбираем слова
-    seg_words = segmented_line.split()
-    gloss_words = gloss_line.split()
-
-    if len(seg_words) != len(gloss_words):
-        logger.warning(
-            f"Предложение {sentence_id}: несовпадение числа слов "
-            f"в сегментации ({len(seg_words)}) и глоссах ({len(gloss_words)}). "
-            f"Сегментация: {segmented_line!r}, Глоссы: {gloss_line!r}"
-        )
-        # Обрабатываем сколько можем
-        min_len = min(len(seg_words), len(gloss_words))
-        seg_words = seg_words[:min_len]
-        gloss_words = gloss_words[:min_len]
-
-    words = []
-    for i, (seg, gls) in enumerate(zip(seg_words, gloss_words)):
-        word = _parse_word(seg, gls, sentence_id, i)
-        if word is not None:
-            words.append(word)
-
-    return Sentence(
-        id=sentence_id,
-        original=original_text,
-        words=words,
+    return _build_sentence(
+        sentence_id=sentence_id,
+        original_text=original_text,
+        segmented_line=segmented_line,
+        gloss_line=gloss_line,
         translation=translation,
     )
+
+
+def _has_numbered_markers(lines: list[str]) -> bool:
+    for line in lines:
+        stripped = line.strip().lstrip("\ufeff")
+        match = _NUMBERED_LINE_RE.match(stripped)
+        if match and match.group(2) in {"<", "="}:
+            return True
+    return False
+
+
+def _translation_targets(
+    id_expr: str,
+    records: dict[str, dict[str, str]],
+    current_id: str | None,
+) -> list[str]:
+    targets = id_expr.split("_")
+    if len(targets) != 1 or current_id is None or targets[0] == current_id:
+        return targets
+
+    # Some reviewed files contain a one-off typo like "21=" immediately after
+    # sentence 20's gloss line. In that position, keep the translation with the
+    # current complete sentence instead of creating a stray future translation.
+    current = records.get(current_id, {})
+    declared = records.get(targets[0], {})
+    if (
+        current.get("original")
+        and current.get("gloss")
+        and not current.get("translation")
+        and not declared.get("original")
+    ):
+        logger.warning(
+            f"Перевод {id_expr}= помещён в блок {current_id}; "
+            f"привязываем его к {current_id}."
+        )
+        return [current_id]
+
+    return targets
+
+
+def _parse_numbered_lines(lines: list[str]) -> list[Sentence]:
+    records: dict[str, dict[str, str]] = {}
+    order: list[str] = []
+    current_id: str | None = None
+
+    for line in lines:
+        stripped = line.strip().lstrip("\ufeff")
+        if not stripped or stripped.startswith("#"):
+            continue
+
+        match = _NUMBERED_LINE_RE.match(stripped)
+        if not match:
+            logger.warning(f"Не удалось распознать строку глоссирования: {stripped!r}")
+            continue
+
+        id_expr, marker, content = match.groups()
+        content = content.strip()
+
+        if marker in {">", "<"} and "_" in id_expr:
+            logger.warning(f"Неверный идентификатор для строки {marker}: {id_expr!r}")
+            continue
+
+        if marker == ">":
+            record = records.setdefault(id_expr, {})
+            if id_expr not in order:
+                order.append(id_expr)
+            record["original"] = content
+            current_id = id_expr
+        elif marker == "<":
+            record = records.setdefault(id_expr, {})
+            record["gloss"] = content
+            current_id = id_expr
+        else:
+            translation = _strip_translation(content)
+            for target_id in _translation_targets(id_expr, records, current_id):
+                records.setdefault(target_id, {})["translation"] = translation
+
+    sentences: list[Sentence] = []
+    for sentence_id in order:
+        record = records.get(sentence_id, {})
+        original_text = record.get("original", "")
+        gloss_line = record.get("gloss", "")
+        if not original_text or not gloss_line:
+            logger.warning(f"Неполный нумерованный блок {sentence_id}: {record!r}")
+            continue
+
+        sentences.append(
+            _build_sentence(
+                sentence_id=sentence_id,
+                original_text=original_text,
+                segmented_line=original_text,
+                gloss_line=gloss_line,
+                translation=record.get("translation", ""),
+            )
+        )
+
+    return sentences
 
 
 def parse_file(filepath: str) -> list[Sentence]:
@@ -204,7 +319,13 @@ def parse_text(text: str) -> list[Sentence]:
     Returns:
         Список объектов Sentence.
     """
-    lines = text.strip().split("\n")
+    text = text.lstrip("\ufeff")
+    lines = text.splitlines()
+    if _has_numbered_markers(lines):
+        sentences = _parse_numbered_lines(lines)
+        logger.info(f"Разобрано {len(sentences)} предложений.")
+        return sentences
+
     sentences = []
 
     # Собираем строки в блоки, разделённые пустыми строками
@@ -212,11 +333,13 @@ def parse_text(text: str) -> list[Sentence]:
     current_block: list[str] = []
 
     for line in lines:
-        stripped = line.strip()
+        stripped = line.strip().lstrip("\ufeff")
         if stripped == "":
             if current_block:
                 blocks.append(current_block)
                 current_block = []
+        elif stripped.startswith("#"):
+            continue
         else:
             current_block.append(stripped)
 
